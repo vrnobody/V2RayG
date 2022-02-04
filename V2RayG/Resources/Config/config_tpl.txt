@@ -1,0 +1,33 @@
+﻿{
+  "outboundMeta": {
+    "tag": "agentout",
+    "protocol": "vmess",
+    "settings": {
+      "address": "127.0.0.1",
+      "port": 0
+    },
+    "streamSettings": {
+      "transport": "tcp",
+      "transportSettings": {},
+      "security": "none",
+      "securitySettings": {}
+    }
+  },
+  "inbSimSock": {
+    "tag": "agentin",
+    "port": 1080,
+    "listen": "127.0.0.1",
+    "protocol": "socks",
+    "settings": {}
+  },
+  "tplImportVmess": {
+    "v2rayg": {
+      "alias": "",
+      "description": ""
+    }
+  },
+  "vgc": {
+    "alias": "",
+    "description": ""
+  }
+}

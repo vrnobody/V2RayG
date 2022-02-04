@@ -1,0 +1,55 @@
+﻿{
+  "chainV5Tpl": {
+    "v2rayg": {
+      "alias": "PackageV5",
+      "description": ""
+    },
+    "inbounds": [
+      {
+        "port": 1080,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {},
+        "tag": "agentin"
+      }
+    ],
+    "outbounds": []
+  },
+  "pkgV5Tpl": {
+    "v2rayg": {
+      "alias": "PackageV5",
+      "description": ""
+    },
+    "routing": {
+      "balancingRule": [
+        {
+          "tag": "pacman",
+          "outboundSelector": [
+            "node"
+          ],
+          "strategy": {
+            "type": "random"
+          }
+        }
+      ],
+      "rule": [
+        {
+          "inboundTag": [
+            "agentin"
+          ],
+          "balancingTag": "pacman"
+        }
+      ]
+    },
+    "inbounds": [
+      {
+        "port": 1080,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {},
+        "tag": "agentin"
+      }
+    ],
+    "outbounds": []
+  }
+}
