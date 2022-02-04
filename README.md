@@ -13,7 +13,7 @@
 [11]: https://github.com/vrnobody/V2RayG/issues "Issues"
 [12]: https://github.com/vrnobody/luna-scripts "Luna scripts"
 
-V2RayG是[v2ray-core v5](https://v2fly.com)的windows客户端。  
+V2RayG是[v2ray-core v5](https://github.com/v2fly/v2ray-core)的windows客户端。  
 目前还在开发中，可能会有些bug。  
 
 [\[下载 download\]][9]&nbsp;&nbsp;[\[手册 manual\]][10]&nbsp;&nbsp;[\[唯一联系方式 issue\]][11]  
@@ -48,6 +48,6 @@ Require .net framework 4.5+.
 [rxi/json.lua](https://github.com/rxi/json.lua) Luna插件中的json解释器  
 [shadowsocksr-backup/shadowsocksr-csharp](https://github.com/shadowsocksr-backup/shadowsocksr-csharp) 屏幕扫码实现代码  
 [txthinking/blackwhite](https://github.com/txthinking/blackwhite) ProxySetter插件中的默认PAC  
-[v2ray/v2ray-core](https://github.com/v2ray/v2ray-core) v2ray-core服务端  
+[v2fly/v2ray-core](https://github.com/v2fly/v2ray-core) v2ray-core服务端  
 [vrnobody/V2RayGCon](https://github.com/vrnobody/V2RayGCon) 适用于v2ray-core 4.x的原客户端  
 [wilhelmy/lua-bencode](https://bitbucket.org/wilhelmy/lua-bencode) bencode(torrent)解释器  
