@@ -13,7 +13,7 @@
 [11]: https://github.com/vrnobody/V2RayG/issues "Issues"
 [12]: https://github.com/vrnobody/luna-scripts "Luna scripts"
 
-V2RayG是[v2ray-core v5+](https://v2fly.com)的windows客户端。  
+V2RayG是[v2ray-core v5](https://v2fly.com)的windows客户端。  
 目前还在开发中，可能会有些bug。  
 
 [\[下载 download\]][9]&nbsp;&nbsp;[\[手册 manual\]][10]&nbsp;&nbsp;[\[唯一联系方式 issue\]][11]  
