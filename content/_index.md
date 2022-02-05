@@ -4,7 +4,7 @@ date: 2020-01-31T21:02:39+08:00
 draft: false
 ---
 
-V2RayG是[v2ray-core v5+][1]的windows客户端。  
+V2RayG是[v2ray-core v5][1]的windows客户端。  
 
 [\[项目主页\]][4] [\[下载地址\]][2] [\[本手册项目主页\]][5]  
 
