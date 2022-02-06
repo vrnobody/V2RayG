@@ -257,7 +257,6 @@ stat: <
         [DataRow(@"{}", "")]
         public void RemoveKeyFromJsonFailTest(string json, string key)
         {
-            // outboundDetour inboundDetour
             var j = JObject.Parse(json);
             Assert.ThrowsException<KeyNotFoundException>(() =>
             {
@@ -273,7 +272,6 @@ stat: <
         [DataRow(@"{'a':1,'b':1}", "a", @"{'b':1}")]
         public void RemoveKeyFromJsonNormalTest(string json, string key, string expect)
         {
-            // outboundDetour inboundDetour
             var j = JObject.Parse(json);
             RemoveKeyFromJObject(j, key);
             var e = JObject.Parse(expect);

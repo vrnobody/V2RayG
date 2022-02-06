@@ -25,7 +25,7 @@ namespace V2RayG.Views.WinForms
 
             setting = Services.Settings.Instance;
             this.FormClosed += (s, e) => logDisplayer?.Dispose();
-            Misc.UI.SetFormLocation<FormLog>(this, Models.Datas.Enums.FormLocations.BottomLeft);
+            Misc.UI.SetFormLocation<FormLog>(this, Apis.Models.Datas.Enums.FormLocations.BottomLeft);
         }
 
         private void FormLog_Load(object sender, EventArgs e)

@@ -116,63 +116,31 @@ namespace V2RayG.Tests
 
         [DataTestMethod]
         [DataRow(
-            @"{routing:{settings:{rules:[{a:[1,3]}]}}}",
-            @"{routing:{settings:{rules:[{a:[2]}]}}}",
-            @"{routing:{settings:{rules:[{a:[2]},{a:[1,3]}]}}}")]
+            @"{routing:{rule:[{a:[1,3]}]}}",
+            @"{routing:{rule:[{a:[2]}]}}",
+            @"{routing:{rule:[{a:[2]},{a:[1,3]}]}}")]
         [DataRow(
-            @"{routing:{settings:{rules:[{b:2},{a:[1,2,3,{c:1}]}]}}}",
-            @"{routing:{settings:{rules:[{a:[1,2,3,{c:1}]},{c:2}]}}}",
-            @"{routing:{settings:{rules:[{a:[1,2,3,{c:1}]},{c:2},{b:2}]}}}")]
+            @"{routing:{rule:[{b:2},{a:[1,2,3,{c:1}]}]}}",
+            @"{routing:{rule:[{a:[1,2,3,{c:1}]},{c:2}]}}",
+            @"{routing:{rule:[{a:[1,2,3,{c:1}]},{c:2},{b:2}]}}")]
         [DataRow(
-            @"{routing:{settings:{rules:[{b:2},{a:1}]}}}",
-            @"{routing:{settings:{rules:[{a:1}]}}}",
-            @"{routing:{settings:{rules:[{a:1},{b:2}]}}}")]
+            @"{routing:{rule:[{b:2},{a:1}]}}",
+            @"{routing:{rule:[{a:1}]}}",
+            @"{routing:{rule:[{a:1},{b:2}]}}")]
         [DataRow(
-            @"{'a':1,'arr':[1,2,3],'routing':{'a':1,'settings':{'c':1,'rules':[{'b':2}]}}}",
-            @"{'a':2,'b':1,'arr':null,'routing':{'b':2,'settings':{'c':2,'rules':[{'a':1}]}}}",
-            @"{'a':2,'b':1,'arr':null,'routing':{'a':1,'b':2,'settings':{'c':2,'rules':[{'a':1},{'b':2}]}}}")]
-        [DataRow(
-            @"{'arr':[1,2],'routing':{'a':1,'settings':{'c':1,'rules':[{'b':2}]}}}",
-            @"{'arr':[4,5,6],'routing':{'b':2,'settings':{'c':2,'rules':[{'a':1}]}}}",
-            @"{'arr':[4,5,6],'routing':{'a':1,'b':2,'settings':{'c':2,'rules':[{'a':1},{'b':2}]}}}")]
-        [DataRow(
-            @"{'routing':{'a':1,'settings':{'c':1,'rules':[{'b':2}]}}}",
-            @"{'routing':{'b':2,'settings':{'c':2,'rules':[{'a':1}]}}}",
-            @"{'routing':{'a':1,'b':2,'settings':{'c':2,'rules':[{'a':1},{'b':2}]}}}")]
-        [DataRow(
-            @"{'routing':{'a':1,'settings':{'c':1,'rules':[{'a':1}]}}}",
-            @"{'routing':{'b':2,'settings':{'c':2,'rules':[]}}}",
-            @"{'routing':{'a':1,'b':2,'settings':{'c':2,'rules':[{'a':1}]}}}")]
-        [DataRow(
-            @"{'routing':{'a':1,'settings':{'c':1,'rules':null}}}",
-            @"{'routing':{'b':2,'settings':{'c':2,'rules':[{'a':1}]}}}",
-            @"{'routing':{'a':1,'b':2,'settings':{'c':2,'rules':[{'a':1}]}}}")]
-        [DataRow(
-            @"{'routing':{'a':1,'settings':{'rules':[]}}}",
-            @"{'routing':{'b':2,'settings':{'rules':[]}}}",
-            @"{'routing':{'a':1,'b':2,'settings':{'rules':[]}}}")]
-        [DataRow(
-            @"{'routing':{'a':1}}",
-            @"{'routing':{'b':2,'settings':{'rules':[{'b':1}]}}}",
-            @"{'routing':{'a':1,'b':2,'settings':{'rules':[{'b':1}]}}}")]
-        [DataRow(
-            @"{'routing':{'a':1,'settings':{'rules':[{'b':2}]}}}",
-            @"{'routing':{'a':2,'settings':{'rules':[{'b':1}]}}}",
-            @"{'routing':{'a':2,'settings':{'rules':[{'b':1},{'b':2}]}}}")]
-        [DataRow(
-            @"{'inboundDetour':[{'a':1}]}",
-            @"{'inboundDetour':[{'b':1}]}",
-            @"{'inboundDetour':[{'b':1},{'a':1}]}")]
+            @"{'inbounds':[{'a':1}]}",
+            @"{'inbounds':[{'b':1}]}",
+            @"{'inbounds':[{'b':1},{'a':1}]}")]
         [DataRow(@"{'a':1,'b':1}", @"{'b':2}", @"{'a':1,'b':2}")]
         [DataRow(@"{'a':1}", @"{'b':1}", @"{'a':1,'b':1}")]
         [DataRow(@"{}", @"{}", @"{}")]
         [DataRow(
-            @"{'inboundDetour':[{'a':1}],'outboundDetour':null}",
-            @"{'inboundDetour':null,'outboundDetour':[{'b':1}]}",
-            @"{'inboundDetour':[{'a':1}],'outboundDetour':[{'b':1}]}")]
+            @"{'inbounds':[{'a':1}],'outbounds':null}",
+            @"{'inbounds':null,'outbounds':[{'b':1}]}",
+            @"{'inbounds':[{'a':1}],'outbounds':[{'b':1}]}")]
         public void CombineConfigTest(string left, string right, string expect)
         {
-            // outboundDetour inboundDetour
+            // outbounds inbounds
             var body = JObject.Parse(left);
             var mixin = JObject.Parse(right);
 

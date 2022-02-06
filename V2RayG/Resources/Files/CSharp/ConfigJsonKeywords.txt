@@ -27,7 +27,6 @@ allowInsecure
 allowInsecureCiphers
 allowTransparent
 alpn
-alterId
 always
 api
 application/octet-stream
@@ -40,6 +39,7 @@ auth
 auto
 balancerTag
 balancers
+balancingRule
 baselines
 bittorrent
 blackhole
@@ -171,6 +171,7 @@ mtproto
 mtu
 mux
 network
+networks
 nextProtocol
 no-cache
 noauth
@@ -206,6 +207,7 @@ request
 response
 reverse
 routing
+rule
 rules
 secret
 security
@@ -214,7 +216,6 @@ seed
 selector
 sendThrough
 serverName
-servers
 serviceName
 services
 settings
@@ -273,7 +274,6 @@ verify
 version
 video/mpeg
 vmess
-vnext
 Warning
 warning
 wechat-video

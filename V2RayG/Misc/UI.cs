@@ -344,7 +344,7 @@ namespace V2RayG.Misc
         #region DEBUG
 
         [Conditional("DEBUG")]
-        public static void SetFormLocation<T>(T form, Models.Datas.Enums.FormLocations location) where T : Form
+        public static void SetFormLocation<T>(T form, Apis.Models.Datas.Enums.FormLocations location) where T : Form
         {
             var width = Screen.PrimaryScreen.WorkingArea.Width;
             var height = Screen.PrimaryScreen.WorkingArea.Height;
@@ -356,13 +356,13 @@ namespace V2RayG.Misc
 
             switch (location)
             {
-                case Models.Datas.Enums.FormLocations.TopRight:
+                case Apis.Models.Datas.Enums.FormLocations.TopRight:
                     form.Left = width / 2;
                     break;
-                case Models.Datas.Enums.FormLocations.BottomLeft:
+                case Apis.Models.Datas.Enums.FormLocations.BottomLeft:
                     form.Top = height / 2;
                     break;
-                case Models.Datas.Enums.FormLocations.BottomRight:
+                case Apis.Models.Datas.Enums.FormLocations.BottomRight:
                     form.Top = height / 2;
                     form.Left = width / 2;
                     break;

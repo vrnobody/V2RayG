@@ -83,35 +83,18 @@ namespace V2RayG.Misc
 
             try
             {
-                var outbound = GetKey(json, "outbound");
-                if (outbound != null && outbound is JObject)
+                var outbound = GetKey(json, "outbounds");
+                if (outbound != null && outbound is JArray)
                 {
-                    result.Add(outbound);
+                    foreach (JObject item in outbound)
+                    {
+                        result.Add(item);
+                    }
                 }
             }
             catch { }
 
-            foreach (var key in new string[] { "outboundDetour", "outbounds" })
-            {
-                try
-                {
-                    var outboundDtr = GetKey(json, key);
-                    if (outboundDtr != null && outboundDtr is JArray)
-                    {
-                        foreach (JObject item in outboundDtr)
-                        {
-                            result.Add(item);
-                        }
-                    }
-                }
-                catch { }
-            }
             return result;
-        }
-
-        public static string GetConfigRoot(bool isInbound)
-        {
-            return (isInbound ? "inbound" : "outbound") + "s.0";
         }
 
         public static JObject ParseImportRecursively(
@@ -535,8 +518,6 @@ namespace V2RayG.Misc
             {
                 "inbounds",
                 "outbounds",
-                "inboundDetour",
-                "outboundDetour",
             };
             CombineConfigWorker(ref body, mixin, keys);
         }
@@ -547,11 +528,8 @@ namespace V2RayG.Misc
             {
                 "inbounds",
                 "outbounds",
-                "inboundDetour",
-                "outboundDetour",
-                "routing.rules",
-                "routing.balancers",
-                "routing.settings.rules",
+                "routing.rule",
+                "routing.balancingRule",
             };
             CombineConfigWorker(ref body, mixin, keys);
         }
@@ -620,8 +598,6 @@ namespace V2RayG.Misc
                     {
                         case "inbounds":
                         case "outbounds":
-                        case "inboundDetour":
-                        case "outboundDetour":
                             nodeBody = CombineJArray(nodeBody, nodeMixin, key);
                             break;
                         default:

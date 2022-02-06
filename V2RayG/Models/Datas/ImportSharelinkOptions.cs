@@ -18,7 +18,7 @@
             IsImportSsShareLink = false;
             IsInjectGlobalImport = false;
 
-            Mode = (int)Enums.ProxyTypes.HTTP;
+            Mode = (int)Apis.Models.Datas.Enums.ProxyTypes.HTTP;
             Ip = Apis.Models.Consts.Webs.LoopBackIP;
             Port = Apis.Models.Consts.Webs.DefaultProxyPort;
         }

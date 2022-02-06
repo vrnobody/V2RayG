@@ -106,12 +106,12 @@ namespace V2RayG.Services
             string ip,
             int port)
         {
-            if (inbType == (int)Models.Datas.Enums.ProxyTypes.Config)
+            if (inbType == (int)Apis.Models.Datas.Enums.ProxyTypes.Config)
             {
                 return true;
             }
 
-            if (inbType == (int)Models.Datas.Enums.ProxyTypes.Custom)
+            if (inbType == (int)Apis.Models.Datas.Enums.ProxyTypes.Custom)
             {
                 try
                 {
@@ -126,8 +126,8 @@ namespace V2RayG.Services
                 return false;
             }
 
-            if (inbType != (int)Models.Datas.Enums.ProxyTypes.HTTP
-                && inbType != (int)Models.Datas.Enums.ProxyTypes.SOCKS)
+            if (inbType != (int)Apis.Models.Datas.Enums.ProxyTypes.HTTP
+                && inbType != (int)Apis.Models.Datas.Enums.ProxyTypes.SOCKS)
             {
                 return false;
             }
@@ -567,7 +567,7 @@ namespace V2RayG.Services
 
             if (!ModifyInboundWithCustomSetting(
                 ref config,
-                (int)Models.Datas.Enums.ProxyTypes.HTTP,
+                (int)Apis.Models.Datas.Enums.ProxyTypes.HTTP,
                 Apis.Models.Consts.Webs.LoopBackIP,
                 port))
             {

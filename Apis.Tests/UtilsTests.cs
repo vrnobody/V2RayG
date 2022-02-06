@@ -332,9 +332,6 @@ namespace Apis.Tests
 
         [DataTestMethod]
         [DataRow(
-            @"{routing:{settings:{rules:[{},{}]},balancers:[{},{}],rules:[{},{}]}}",
-            @"routing:{},routing.settings:{},routing.settings.rules:[],routing.settings.rules.0:{},routing.settings.rules.1:{},routing.balancers:[],routing.balancers.0:{},routing.balancers.1:{},routing.rules:[],routing.rules.0:{},routing.rules.1:{}")]
-        [DataRow(
             @"{1:[[],[]],'':{},b:123,c:{}}",
             @"c:{}")]
         [DataRow(

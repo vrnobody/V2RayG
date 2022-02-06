@@ -33,10 +33,11 @@ using System.Runtime.InteropServices;
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.1.1")]
+[assembly: AssemblyVersion("0.0.1.2")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 /*
+ * v0.0.1.2 modify global import rules
  * v0.0.1.1 add generate-random-UUID in systray context menu
  * v0.0.1.0 first release
  */
