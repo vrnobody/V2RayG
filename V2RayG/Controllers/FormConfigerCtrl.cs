@@ -11,6 +11,7 @@ namespace V2RayG.Controllers
         public event EventHandler OnChanged;
 
         Services.Servers servers;
+        internal Services.Cache cache;
 
         public JObject config;
         string uid, orgCfg;
@@ -19,6 +20,8 @@ namespace V2RayG.Controllers
         public FormConfigerCtrl()
         {
             servers = Services.Servers.Instance;
+            cache = Services.Cache.Instance;
+
             config = ParseConfigString(null);
         }
 

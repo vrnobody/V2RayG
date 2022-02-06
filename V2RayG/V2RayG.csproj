@@ -142,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\Strings.cs" />
+    <Compile Include="Controllers\ConfigerComponent\TabEditor.cs" />
     <Compile Include="Controllers\FormOptionComponent\TabMultiConf.cs" />
     <Compile Include="Controllers\FormOptionComponent\TabDefaults.cs" />
     <Compile Include="Models\Datas\MultiConfItem.cs" />

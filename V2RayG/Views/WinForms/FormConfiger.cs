@@ -250,6 +250,17 @@ namespace V2RayG.Views.WinForms
             var configer = new Controllers.FormConfigerCtrl();
 
             configer
+                .Plug(new Controllers.ConfigerComponet.TabEditor(
+                    cboxEdtLogLevel,
+                    btnEdtLogInsert,
+
+                    cboxEdtInbProtocol,
+                    btnEdtInbInsert,
+
+                    cboxEdtOutbProto,
+                    cboxEdtOutbTransport,
+                    cboxEdtOutbSecurity,
+                    btnEdtOutbInsert))
                 .Plug(new Controllers.ConfigerComponet.EnvImportMultiConf(
                     cboxMultiConfAlias,
                     tboxMultiConfPath,

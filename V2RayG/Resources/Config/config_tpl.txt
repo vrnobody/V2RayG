@@ -1,4 +1,24 @@
 ﻿{
+  "cfgEdtLogLevel": {
+    "error": {
+      "type": "Console",
+      "level": "Debug"
+    }
+  },
+  "cfgEdtOutb": {
+    "tag": "agentout",
+    "protocol": "vmess",
+    "settings": {
+      "address": "127.0.0.1",
+      "port": 1234
+    },
+    "streamSettings": {
+      "transport": "tcp",
+      "transportSettings": {},
+      "security": "none",
+      "securitySettings": {}
+    }
+  },
   "outboundMeta": {
     "tag": "agentout",
     "protocol": "vmess",
