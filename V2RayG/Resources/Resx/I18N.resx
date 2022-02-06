@@ -783,4 +783,7 @@ No, abort.</value>
   <data name="ConfirmClearStat" xml:space="preserve">
     <value>Reset statistics data?</value>
   </data>
+  <data name="GenRandUUID" xml:space="preserve">
+    <value>Gen random UUID</value>
+  </data>
 </root>

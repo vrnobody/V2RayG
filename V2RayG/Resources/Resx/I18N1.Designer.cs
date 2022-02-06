@@ -929,6 +929,15 @@ namespace V2RayG.Resources.Resx {
         }
         
         /// <summary>
+        ///   查找类似 Gen random UUID 的本地化字符串。
+        /// </summary>
+        internal static string GenRandUUID {
+            get {
+                return ResourceManager.GetString("GenRandUUID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Fail to generate v-link! 的本地化字符串。
         /// </summary>
         internal static string GenVLinkFail {

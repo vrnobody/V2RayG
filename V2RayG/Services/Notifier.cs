@@ -1125,6 +1125,15 @@ namespace V2RayG.Services
                 (s, a) => Misc.UI.VisitUrl(
                     I18N.VistWikiPage, Properties.Resources.WikiLink));
 
+            children.Add(
+                I18N.GenRandUUID,
+                null,
+                (s, a) =>
+                {
+                    var uuid = Guid.NewGuid().ToString();
+                    Misc.Utils.CopyToClipboardAndPrompt(uuid);
+                });
+
             return aboutMenu;
         }
 
