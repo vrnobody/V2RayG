@@ -13,13 +13,16 @@
 [11]: https://github.com/vrnobody/V2RayG/issues "Issues"
 [12]: https://github.com/vrnobody/luna-scripts "Luna scripts"
 
-V2RayG是[v2ray-core v5](https://github.com/v2fly/v2ray-core)的windows客户端。  
-目前还在开发中，可能会有些bug。  
+V2RayG是[v2ray-core v5](https://github.com/v2fly/v2ray-core)的windows客户端。仅支持v5内核！  
+如果你手动下载v2ray-core，请注意删掉config.json。  
+
+V2RayG is a GUI client for v2ray-core v5 in windows system. It supports v2ray-core v5 only!  
+If you download v2ray-core manualy, please remove config.json.  
 
 [\[下载 download\]][9]&nbsp;&nbsp;[\[手册 manual\]][10]&nbsp;&nbsp;[\[唯一联系方式 issue\]][11]  
 
 ### 安装 Install
-先安装.net framework 4.5+，然后下载解压[V2RayG-box.zip][9]到任意目录。  
+先安装.net framework 4.5+（win10系统已自带），然后下载解压[V2RayG-box.zip][9]到任意目录。  
   
 Download and unzip [V2RayG-box.zip][9] to any directory you like.  
 Require .net framework 4.5+.  

@@ -93,7 +93,10 @@ jobs:
                 ${{ env.scriptPkgName }}.zip (${{ env.hashScriptPkgZip }})
 
                 其中${{ env.projName }}-${{ env.boxAppend }}.zip打包了v2ray-core-win64 ${{ env.v2rayCoreVer }}
-                ${{ env.scriptPkgName }}.zip解压后拖进Luna脚本管理器的空白区中即可食用
+                ${{ env.scriptPkgName }}.zip解压后拖进Luna脚本管理器的空白区中即可使用
+
+                #### 注意：
+                如果你手动下载v2ray-core，请删掉config.json
               draft: true
               prerelease: false
 
