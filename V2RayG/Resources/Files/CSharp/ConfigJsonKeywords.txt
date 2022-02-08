@@ -273,6 +273,7 @@ v2rayg
 verify
 version
 video/mpeg
+vless
 vmess
 Warning
 warning
