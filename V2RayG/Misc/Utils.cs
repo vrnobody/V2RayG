@@ -152,42 +152,6 @@ namespace V2RayG.Misc
             return urls ?? new List<string>();
         }
 
-        public static string GenCmdArgFromConfig(string config)
-        {
-            // "-config=stdin: -format=json",
-            var stdIn = Apis.Models.Consts.Core.StdIn;
-            var confArg = Apis.Models.Consts.Core.ConfigArg;
-
-            var jsonFormat = @"-format=jsonv5";
-
-            // var r = $"{jsonFormat} -{confArg}={stdIn}";
-            var r = $"run {jsonFormat}";
-            try
-            {
-                var jobj = JObject.Parse(config);
-                var confs = GetKey(jobj, "v2rayg.configs")?.ToObject<Dictionary<string, string>>()?.Keys;
-                if (confs == null)
-                {
-                    return r;
-                }
-
-                var hasStdIn = false;
-                var args = string.Empty;
-                foreach (var conf in confs)
-                {
-                    if (stdIn == conf)
-                    {
-                        hasStdIn = true;
-                    }
-                    args = $"{args} -{confArg}={conf}";
-                }
-
-                return hasStdIn ? $"{jsonFormat} {args}" : $"{jsonFormat} -{confArg}={stdIn} {args}";
-            }
-            catch { }
-            return r;
-        }
-
         public static Dictionary<string, string> GetEnvVarsFromConfig(JObject config)
         {
             var empty = new Dictionary<string, string>();

@@ -187,15 +187,6 @@ namespace V2RayG.Resources.Resx {
         }
         
         /// <summary>
-        ///   查找类似 can not start. Please check logs. 的本地化字符串。
-        /// </summary>
-        internal static string CanNotStartPlsCheckLogs {
-            get {
-                return ResourceManager.GetString("CanNotStartPlsCheckLogs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Can find original server. Delete fail! 的本地化字符串。
         /// </summary>
         internal static string CantFindOrgServDelFail {
@@ -564,6 +555,15 @@ namespace V2RayG.Resources.Resx {
         internal static string CoreExit {
             get {
                 return ResourceManager.GetString("CoreExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 v2ray-core has stopped, please check logs! 的本地化字符串。
+        /// </summary>
+        internal static string CoreStoppedPlsCheckLog {
+            get {
+                return ResourceManager.GetString("CoreStoppedPlsCheckLog", resourceCulture);
             }
         }
         
@@ -1010,15 +1010,6 @@ namespace V2RayG.Resources.Resx {
         }
         
         /// <summary>
-        ///   查找类似 can not start. Please check configuration. 的本地化字符串。
-        /// </summary>
-        internal static string HasFaultyConfig {
-            get {
-                return ResourceManager.GetString("HasFaultyConfig", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Help 的本地化字符串。
         /// </summary>
         internal static string Help {
@@ -1091,11 +1082,11 @@ namespace V2RayG.Resources.Resx {
         }
         
         /// <summary>
-        ///   查找类似 was killed by user or another app. 的本地化字符串。
+        ///   查找类似 Invalid v2ray-core cmdline argument. 的本地化字符串。
         /// </summary>
-        internal static string KilledByUserOrOtherApp {
+        internal static string InvalidCoreCmdArg {
             get {
-                return ResourceManager.GetString("KilledByUserOrOtherApp", resourceCulture);
+                return ResourceManager.GetString("InvalidCoreCmdArg", resourceCulture);
             }
         }
         

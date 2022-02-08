@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -256,11 +257,45 @@ namespace V2RayG.Libs.V2Ray
             catch { }
         }
 
+        string GenCmdArgFromConfig(string config)
+        {
+            // "-config=stdin: -format=json",
+            var stdIn = @"stdin:";
+            var confArg = @"config";
+
+            var v5args = @"run -format=jsonv5";
+
+            try
+            {
+                var jobj = JObject.Parse(config);
+                var confs = Misc.Utils.GetKey(jobj, "v2rayg.configs")?.ToObject<Dictionary<string, string>>()?.Keys;
+                if (confs == null)
+                {
+                    return v5args;
+                }
+
+                var hasStdIn = false;
+                var args = string.Empty;
+                foreach (var conf in confs)
+                {
+                    if (stdIn == conf)
+                    {
+                        hasStdIn = true;
+                    }
+                    args = $"{args} -{confArg}={conf}";
+                }
+
+                return hasStdIn ? $"{v5args} {args}" : $"{v5args} -{confArg}={stdIn} {args}";
+            }
+            catch { }
+            return v5args;
+        }
+
         Process CreateV2RayCoreProcess(string config)
         {
             var exe = GetExecutablePath(Apis.Models.Consts.Core.V2RayCoreExeFileName);
 
-            var args = Misc.Utils.GenCmdArgFromConfig(config);
+            var args = GenCmdArgFromConfig(config);
 
             var p = new Process
             {
@@ -302,21 +337,20 @@ namespace V2RayG.Libs.V2Ray
             }
 
             /*
-             * v2ray-core/main/main.go
-             * 23: Configuration error.
+             * SetExitStatus(2)
+             * 2: arg error
+             * 1: other error
              * -1: Failed to start.
              */
             string msg = string.Format(I18N.V2rayCoreExitAbnormally, title, exitCode);
             switch (exitCode)
             {
                 case 1:
-                    msg = title + @" " + I18N.KilledByUserOrOtherApp;
-                    break;
-                case 23:
-                    msg = title + @" " + I18N.HasFaultyConfig;
-                    break;
                 case -1:
-                    msg = title + @" " + I18N.CanNotStartPlsCheckLogs;
+                    msg = title + "\n" + I18N.CoreStoppedPlsCheckLog;
+                    break;
+                case 2:
+                    msg = title + "\n" + I18N.InvalidCoreCmdArg;
                     break;
                 default:
                     break;

@@ -678,15 +678,6 @@ https://github.com/v2ray/v2ray-core</value>
   <data name="StopAllServers" xml:space="preserve">
     <value>全部停止</value>
   </data>
-  <data name="CanNotStartPlsCheckLogs" xml:space="preserve">
-    <value>无法启动，请检查日志。</value>
-  </data>
-  <data name="HasFaultyConfig" xml:space="preserve">
-    <value>配置有误，无法启动。</value>
-  </data>
-  <data name="KilledByUserOrOtherApp" xml:space="preserve">
-    <value>已被用户或其他程序杀死。</value>
-  </data>
   <data name="SpeedtestPortNum" xml:space="preserve">
     <value>测速端口号：</value>
   </data>
@@ -776,5 +767,11 @@ https://github.com/v2ray/v2ray-core</value>
   </data>
   <data name="GenRandUUID" xml:space="preserve">
     <value>生成随机UUID</value>
+  </data>
+  <data name="CoreStoppedPlsCheckLog" xml:space="preserve">
+    <value>v2ray-core已停止，请检查日志！</value>
+  </data>
+  <data name="InvalidCoreCmdArg" xml:space="preserve">
+    <value>无效的v2ray-core命令行参数</value>
   </data>
 </root>

@@ -111,7 +111,7 @@ namespace V2RayG.Controllers.ConfigerComponet
         {
             var stdinKey = @"Standard Input";
             multiConfTable = new Dictionary<string, string> {
-                {stdinKey, Apis.Models.Consts.Core.StdIn},
+                {stdinKey, @"stdin:"},
             };
 
             var multiConfItems = Services.Settings.Instance.GetMultiConfItems();
