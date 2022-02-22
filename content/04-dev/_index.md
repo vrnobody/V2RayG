@@ -5,5 +5,6 @@ draft: false
 weight: 4
 ---
 
-这里写些没什么人看的设计原理之类的东东。  
+这是Windows中运行Linux，还是Linux中运行Windows，或者Windows中运行Linux运行Windows...
+{{< figure src="../images/screenshots/20220222.png" >}}  
 
