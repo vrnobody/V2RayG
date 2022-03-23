@@ -46,8 +46,6 @@ namespace V2RayG.Controllers.CoreServerComponent
                 return;
             }
 
-            AddToSampleHistory(sample);
-
             var up = sample.statsUplink;
             var down = sample.statsDownlink;
 
@@ -354,27 +352,6 @@ namespace V2RayG.Controllers.CoreServerComponent
         #endregion
 
         #region private methods
-
-        // 暂时不知道这个有什么用，先浪费下内存 XD
-        const int sampleSize = 50;
-        int curSampleIdx = -1;
-        List<Apis.Models.Datas.StatsSample> samples = new List<Apis.Models.Datas.StatsSample>();
-        void AddToSampleHistory(Apis.Models.Datas.StatsSample sample)
-        {
-            lock (samples)
-            {
-                curSampleIdx++;
-                if (samples.Count < sampleSize)
-                {
-                    samples.Add(sample);
-                }
-                else
-                {
-                    curSampleIdx %= sampleSize;
-                    samples[curSampleIdx] = sample;
-                }
-            }
-        }
 
         void UpdateStatusWithSpeedTestResult()
         {

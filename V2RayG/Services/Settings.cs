@@ -22,7 +22,7 @@ namespace V2RayG.Services
         Apis.Libs.Tasks.LazyGuy janitor, lazyBookKeeper;
 
         readonly object saveUserSettingsLocker = new object();
-        string serializedUserSettingsCache = @"";
+        string lastUserSettingsHash = @"";
         public event EventHandler OnPortableModeChanged;
         Apis.Models.Datas.Enums.ShutdownReasons shutdownReason = Apis.Models.Datas.Enums.ShutdownReasons.Undefined;
 
@@ -876,7 +876,8 @@ namespace V2RayG.Services
 
         void SaveUserSettingsToFile(string content)
         {
-            if (content.Equals(serializedUserSettingsCache))
+            var hash = Apis.Misc.Utils.Md5Base64(content);
+            if (hash == lastUserSettingsHash)
             {
                 Apis.Libs.Sys.FileLogger.Info("Settings.SaverUserSettingsToFile() no change, skip");
                 return;
@@ -892,7 +893,7 @@ namespace V2RayG.Services
                     Constants.Strings.BackupUserSettingsFilename);
                 if (ok)
                 {
-                    serializedUserSettingsCache = content;
+                    lastUserSettingsHash = hash;
                     Apis.Libs.Sys.FileLogger.Info("Settings.SaverUserSettingsToFile() success");
                     return;
                 }
@@ -900,7 +901,7 @@ namespace V2RayG.Services
 
             Apis.Libs.Sys.FileLogger.Error("Settings.SaverUserSettingsToFile() failed");
             // main file or bak file write fail, clear cache
-            serializedUserSettingsCache = @"";
+            lastUserSettingsHash = @"";
             WarnUserSaveSettingsFailed(content);
         }
 
@@ -944,7 +945,7 @@ namespace V2RayG.Services
             try
             {
                 var content = File.ReadAllText(Constants.Strings.MainUserSettingsFilename);
-                serializedUserSettingsCache = content;
+                lastUserSettingsHash = Apis.Misc.Utils.Md5Base64(content);
                 result = JsonConvert.DeserializeObject<Models.Datas.UserSettings>(content);
             }
             catch { }
