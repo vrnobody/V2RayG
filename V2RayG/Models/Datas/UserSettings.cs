@@ -48,6 +48,7 @@ namespace V2RayG.Models.Datas
 
         public string Culture { get; set; }
         public string CoreInfoList { get; set; }
+        public string CompressedCoreInfoList { get; set; }
         public string ServerTracker { get; set; }
         public string WinFormPosList { get; set; }
 
@@ -99,6 +100,7 @@ namespace V2RayG.Models.Datas
 
             Culture = string.Empty;
             CoreInfoList = string.Empty;
+            CompressedCoreInfoList = string.Empty;
 
             ServerTracker = string.Empty;
             WinFormPosList = string.Empty;

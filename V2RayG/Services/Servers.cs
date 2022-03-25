@@ -51,7 +51,7 @@ namespace V2RayG.Services
             lazyServerSettingsRecorder = new Apis.Libs.Tasks.LazyGuy(
                 SaveServersSettingsWorker,
                 Apis.Models.Consts.Intervals.LazySaveServerListIntreval,
-                1000)
+                2 * 1000)
             {
                 Name = "Servers.SaveSettings()",
             };
