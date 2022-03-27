@@ -568,21 +568,21 @@ namespace V2RayG.Services
         {
             List<Apis.Models.Datas.CoreInfo> coreInfos = null;
 
-            var s = string.Empty;
-            var cs = userSettings.CompressedCoreInfoList;
-            if (!string.IsNullOrEmpty(cs))
-            {
-                s = Apis.Libs.Infr.ZipExtensions.DecompressFromBase64(cs);
-            }
-            else
-            {
-                s = userSettings.CoreInfoList;
-            }
-
             try
             {
-                coreInfos = JsonConvert
-                    .DeserializeObject<List<Apis.Models.Datas.CoreInfo>>(s);
+                var cs = userSettings.CompressedCoreInfoList;
+                if (string.IsNullOrEmpty(cs))
+                {
+                    coreInfos = JsonConvert
+                        .DeserializeObject<List<Apis.Models.Datas.CoreInfo>>(
+                            userSettings.CoreInfoList);
+                }
+                else
+                {
+                    coreInfos = Apis.Libs.Infr.ZipExtensions
+                        .DeserializeObjectFromCompressedBase64<List<Apis.Models.Datas.CoreInfo>>(
+                            cs);
+                }
             }
             catch { }
 
@@ -737,9 +737,8 @@ namespace V2RayG.Services
 
         public void SaveServerList(List<Apis.Models.Datas.CoreInfo> coreInfoList)
         {
-            string json = JsonConvert.SerializeObject(
-                coreInfoList ?? new List<Apis.Models.Datas.CoreInfo>());
-            string cs = Apis.Libs.Infr.ZipExtensions.CompressToBase64(json);
+            var cil = coreInfoList ?? new List<Apis.Models.Datas.CoreInfo>();
+            string cs = Apis.Libs.Infr.ZipExtensions.SerializeObjectToCompressedBase64(cil);
 
             userSettings.CoreInfoList = string.Empty; // obsolete
             userSettings.CompressedCoreInfoList = cs;
