@@ -324,6 +324,7 @@ namespace V2RayG.Services
             Invoke(() =>
             {
                 miPluginsRoot.DropDownItems.Clear();
+                miPluginsRoot.DropDown.PerformLayout();
                 if (children == null || children.Count() < 1)
                 {
                     miPluginsRoot.Visible = false;
@@ -579,6 +580,7 @@ namespace V2RayG.Services
         {
             var root = miServersRoot.DropDownItems;
             root.Clear();
+            miServersRoot.DropDown.PerformLayout();
 
             var count = miGroupedServers.Count;
             if (count < 1)
@@ -594,6 +596,7 @@ namespace V2RayG.Services
                 var qs = qsMenuCompos[qsMenuNames.QuickSwitchMenuRoot];
                 var items = qs.DropDownItems;
                 items.Clear();
+                qs.DropDown.PerformLayout();
                 items.Add(qsMenuCompos[qsMenuNames.SwitchToRandomServer]);
                 items.Add(qsMenuCompos[qsMenuNames.SwitchToRandomTlsServer]);
                 items.Add(new ToolStripSeparator());
