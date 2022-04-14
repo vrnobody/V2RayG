@@ -33,10 +33,11 @@ using System.Runtime.InteropServices;
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.2.3")]
+[assembly: AssemblyVersion("0.0.2.4")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 /*
+ * v0.0.2.4 refactor
  * v0.0.2.3 Add SaveUserSettingsLater() in Luna plug-in.
  *          Change servers setting interval to 60 seconds.
  * v0.0.2.2 Call PerformLayout() after dropdown-menu-item cleared.
