@@ -13,7 +13,15 @@ namespace Luna.Services
         Models.Data.UserSettings userSettings;
         Libs.LuaSnippet.SnippetsCache snpCache;
 
-        public Settings() { }
+        Apis.Libs.Tasks.LazyGuy lazyBookKeeper;
+
+        public Settings()
+        {
+            lazyBookKeeper = new Apis.Libs.Tasks.LazyGuy(
+                    SaveUserSettingsNow,
+                    Apis.Models.Consts.Intervals.LazySaveLunaSettingsInterval,
+                    3000);
+        }
 
         #region properties
         bool _isDisposing = false;
@@ -78,7 +86,7 @@ namespace Luna.Services
             {
                 success = userSettings.luaShareMemory.Remove(key);
             }
-            SaveUserSettingsNow();
+            SaveUserSettingsLater();
             return success;
         }
 
@@ -101,21 +109,27 @@ namespace Luna.Services
             {
                 userSettings.luaShareMemory[key] = value;
             }
-            SaveUserSettingsNow();
+            SaveUserSettingsLater();
         }
 
         public List<Models.Data.LuaCoreSetting> GetLuaCoreSettings() =>
             userSettings.luaServers;
 
+        public void SaveUserSettingsLater() =>
+            lazyBookKeeper?.Deadline();
         #endregion
 
         #region protected methods
         protected override void Cleanup()
         {
+            lazyBookKeeper?.Dispose();
             snpCache?.Dispose();
+            SaveUserSettingsNow();
         }
+        #endregion
 
-        public void SaveUserSettingsNow() =>
+        #region private methods
+        void SaveUserSettingsNow() =>
             Apis.Misc.Utils.SavePluginSetting(
                 pluginName, userSettings, vgcSetting);
 
