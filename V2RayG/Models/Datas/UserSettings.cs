@@ -45,6 +45,7 @@ namespace V2RayG.Models.Datas
 
         public string PluginInfoItems { get; set; }
         public string PluginsSetting { get; set; }
+        public string CompressedPluginsSetting { get; set; }
 
         public string Culture { get; set; }
         public string CoreInfoList { get; set; }
@@ -97,6 +98,7 @@ namespace V2RayG.Models.Datas
             // PluginInfoItems = "[{\"filename\":\"ProxySetter\",\"isUse\":true}]";
             PluginInfoItems = string.Empty;
             PluginsSetting = string.Empty;
+            CompressedPluginsSetting = string.Empty;
 
             Culture = string.Empty;
             CoreInfoList = string.Empty;
