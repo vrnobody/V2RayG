@@ -223,15 +223,6 @@
   <data name="btnSetOpenStartupFolder.ToolTip" xml:space="preserve">
     <value>拖个快捷方式进去就可以开机启动啦</value>
   </data>
-  <data name="chkSetUseV4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 16</value>
-  </data>
-  <data name="chkSetUseV4.Text" xml:space="preserve">
-    <value>优先使用v4格式</value>
-  </data>
-  <data name="chkSetUseV4.ToolTip" xml:space="preserve">
-    <value>导入/编辑时使用v4的in(out)bounds</value>
-  </data>
   <data name="chkSetSysPortable.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
   </data>
@@ -373,21 +364,6 @@
   <data name="groupBox7.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tboxDefImportVmessDecodeTemplateUrl.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="chkDefImportIsUseVmessDecodeTemplate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 16</value>
-  </data>
-  <data name="chkDefImportIsUseVmessDecodeTemplate.Text" xml:space="preserve">
-    <value>使用</value>
-  </data>
-  <data name="btnDefImportBrowseVemssDecodeTemplate.Text" xml:space="preserve">
-    <value>解码模板</value>
-  </data>
-  <data name="btnDefImportBrowseVemssDecodeTemplate.ToolTip" xml:space="preserve">
-    <value>浏览 vmess://... 解码模板</value>
-  </data>
   <data name="chkDefImportInjectGlobalImport.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 16</value>
   </data>
@@ -396,15 +372,6 @@
   </data>
   <data name="chkDefImportInjectGlobalImport.ToolTip" xml:space="preserve">
     <value>注入全局import</value>
-  </data>
-  <data name="chkDefImportBypassCnSite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
-  </data>
-  <data name="chkDefImportBypassCnSite.Text" xml:space="preserve">
-    <value>绕过CN网站</value>
-  </data>
-  <data name="chkDefImportBypassCnSite.ToolTip" xml:space="preserve">
-    <value>绕过CN网站</value>
   </data>
   <data name="chkDefImportTrojanShareLink.ToolTip" xml:space="preserve">
     <value>导入时包含Trojan分享链接</value>
@@ -583,7 +550,7 @@
     <value />
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>选项</value>
+    <value>V2RayG - 选项</value>
   </data>
   <data name="$this.ToolTip" xml:space="preserve">
     <value />

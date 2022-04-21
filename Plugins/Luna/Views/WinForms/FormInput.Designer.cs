@@ -41,6 +41,7 @@
             // 
             resources.ApplyResources(this.btnOk, "btnOk");
             this.btnOk.Name = "btnOk";
+            this.toolTip1.SetToolTip(this.btnOk, resources.GetString("btnOk.ToolTip"));
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
@@ -48,11 +49,13 @@
             // 
             resources.ApplyResources(this.lbTitle, "lbTitle");
             this.lbTitle.Name = "lbTitle";
+            this.toolTip1.SetToolTip(this.lbTitle, resources.GetString("lbTitle.ToolTip"));
             // 
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.Name = "btnCancel";
+            this.toolTip1.SetToolTip(this.btnCancel, resources.GetString("btnCancel.ToolTip"));
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -61,6 +64,7 @@
             resources.ApplyResources(this.rtboxInput, "rtboxInput");
             this.rtboxInput.DetectUrls = false;
             this.rtboxInput.Name = "rtboxInput";
+            this.toolTip1.SetToolTip(this.rtboxInput, resources.GetString("rtboxInput.ToolTip"));
             // 
             // FormInput
             // 
@@ -72,6 +76,7 @@
             this.Controls.Add(this.btnOk);
             this.KeyPreview = true;
             this.Name = "FormInput";
+            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FormInput_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyDown);
             this.ResumeLayout(false);
