@@ -22,7 +22,7 @@ namespace V2RayG.Services
         Apis.Libs.Tasks.LazyGuy janitor, lazyBookKeeper;
 
         readonly object saveUserSettingsLocker = new object();
-        string lastUserSettingsHash = @"";
+
         public event EventHandler OnPortableModeChanged;
         Apis.Models.Datas.Enums.ShutdownReasons shutdownReason = Apis.Models.Datas.Enums.ShutdownReasons.Undefined;
 
@@ -764,20 +764,19 @@ namespace V2RayG.Services
         void SaveUserSettingsWorker()
         {
             // Apis.Libs.Sys.FileLogger.Info("Settings.SaveUserSettingsWorker() begin");
-            string serializedUserSettings = "";
             try
             {
-                serializedUserSettings = JsonConvert.SerializeObject(userSettings);
+
                 if (userSettings.isPortable)
                 {
                     // DebugSendLog("Try save settings to file.");
-                    SaveUserSettingsToFile(serializedUserSettings);
+                    SaveUserSettingsToFile();
                 }
                 else
                 {
                     // DebugSendLog("Try save settings to properties");
                     SetUserSettingFileIsPortableToFalse();
-                    SaveUserSettingsToProperties(serializedUserSettings);
+                    SaveUserSettingsToProperties();
                     Apis.Libs.Sys.FileLogger.Info("Settings.SaveUserSettingsToProperties() done");
                 }
                 // Apis.Libs.Sys.FileLogger.Info("Settings.SaveUserSettingsWorker() done");
@@ -788,6 +787,7 @@ namespace V2RayG.Services
             Apis.Libs.Sys.FileLogger.Info("Settings.SaveUserSettingsWorker() error");
             if (GetShutdownReason() == Apis.Models.Datas.Enums.ShutdownReasons.CloseByUser)
             {
+                var serializedUserSettings = JsonConvert.SerializeObject(userSettings);
                 SendLog("UserSettings: " + Environment.NewLine + serializedUserSettings);
                 throw new ArgumentException("Validate serialized user settings fail!");
             }
@@ -844,11 +844,11 @@ namespace V2RayG.Services
             userSettings.isPortable = false;
             try
             {
-                var serializedUserSettings = JsonConvert.SerializeObject(userSettings);
+
                 lock (saveUserSettingsLocker)
                 {
-                    Apis.Misc.Utils.ClumsyWriter(
-                        serializedUserSettings,
+                    Misc.Utils.ClumsyWriter(
+                        userSettings,
                         mainUsFilename,
                         bakUsFilename);
                 }
@@ -865,10 +865,11 @@ namespace V2RayG.Services
             }
         }
 
-        void SaveUserSettingsToProperties(string content)
+        void SaveUserSettingsToProperties()
         {
             try
             {
+                var content = JsonConvert.SerializeObject(userSettings);
                 Properties.Settings.Default.UserSettings = content;
                 Properties.Settings.Default.Save();
             }
@@ -878,26 +879,18 @@ namespace V2RayG.Services
             }
         }
 
-        void SaveUserSettingsToFile(string content)
+        void SaveUserSettingsToFile()
         {
-            var hash = Apis.Misc.Utils.Md5Base64(content);
-            if (hash == lastUserSettingsHash)
-            {
-                Apis.Libs.Sys.FileLogger.Info("Settings.SaverUserSettingsToFile() no change, skip");
-                return;
-            }
-
             Apis.Libs.Sys.FileLogger.Info("Settings.SaverUserSettingsToFile() write file");
 
             lock (saveUserSettingsLocker)
             {
-                var ok = Apis.Misc.Utils.ClumsyWriter(
-                    content,
+                var ok = Misc.Utils.ClumsyWriter(
+                    userSettings,
                     Constants.Strings.MainUserSettingsFilename,
                     Constants.Strings.BackupUserSettingsFilename);
                 if (ok)
                 {
-                    lastUserSettingsHash = hash;
                     Apis.Libs.Sys.FileLogger.Info("Settings.SaverUserSettingsToFile() success");
                     return;
                 }
@@ -905,17 +898,17 @@ namespace V2RayG.Services
 
             Apis.Libs.Sys.FileLogger.Error("Settings.SaverUserSettingsToFile() failed");
             // main file or bak file write fail, clear cache
-            lastUserSettingsHash = @"";
-            WarnUserSaveSettingsFailed(content);
+            WarnUserSaveSettingsFailed();
         }
 
-        private void WarnUserSaveSettingsFailed(string content)
+        private void WarnUserSaveSettingsFailed()
         {
             var msg = I18N.SaveUserSettingsToFileFail;
 
             if (isClosing)
             {
                 // 兄弟只能帮你到这了
+                string content = JsonConvert.SerializeObject(userSettings);
                 Apis.Libs.Sys.NotepadHelper.ShowMessage(content, Properties.Resources.PortableUserSettingsFilename);
                 msg += Environment.NewLine + string.Format(I18N.AndThenSaveThisFileAs, Properties.Resources.PortableUserSettingsFilename);
             }
@@ -949,7 +942,6 @@ namespace V2RayG.Services
             try
             {
                 var content = File.ReadAllText(Constants.Strings.MainUserSettingsFilename);
-                lastUserSettingsHash = Apis.Misc.Utils.Md5Base64(content);
                 result = JsonConvert.DeserializeObject<Models.Datas.UserSettings>(content);
             }
             catch { }

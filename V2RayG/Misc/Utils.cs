@@ -1141,6 +1141,56 @@ namespace V2RayG.Misc
 
         #region files
 
+        internal static bool SerializeToFile(Models.Datas.UserSettings userSettings, string path)
+        {
+            // https://stackoverflow.com/questions/25366534/file-writealltext-not-flushing-data-to-disk
+            try
+            {
+                // write the data to a temp file
+                using (var fs = File.Create(path, 64 * 1024, FileOptions.WriteThrough))
+                {
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        using (JsonTextWriter jw = new JsonTextWriter(sw))
+                        {
+                            JsonSerializer js = new JsonSerializer();
+                            js.Serialize(jw, userSettings);
+                        }
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                Apis.Libs.Sys.FileLogger.Error($"WriteAllTextNow() exception: {e.ToString()}");
+            }
+            return false;
+        }
+
+        internal static bool ClumsyWriter(Models.Datas.UserSettings userSettings, string mainFilename, string bakFilename)
+        {
+            try
+            {
+                if (SerializeToFile(userSettings, mainFilename))
+                {
+                    if (SerializeToFile(userSettings, bakFilename))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        Apis.Libs.Sys.FileLogger.Error($"ClumsyWriter(): Write bak file failed!");
+                    }
+                }
+                else
+                {
+                    Apis.Libs.Sys.FileLogger.Error($"ClumsyWriter(): Write main file failed!");
+                }
+            }
+            catch { }
+            return false;
+        }
+
         public static string GetSha256SumFromFile(string file)
         {
             // http://peterkellner.net/2010/11/24/efficiently-generating-sha256-checksum-for-files-using-csharp/
