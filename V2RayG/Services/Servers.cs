@@ -521,6 +521,16 @@ namespace V2RayG.Services
             Misc.Utils.ChainActionHelperAsync(list.Count, worker, lambda);
         }
 
+        public void RestartOneServerByUid(string uid)
+        {
+            StopAllServers();
+            var core = coreServList.FirstOrDefault(c => c.GetCoreStates().GetUid() == uid);
+            if (core != null)
+            {
+                core.GetCoreCtrl().RestartCore();
+            }
+        }
+
         public void StopAllServers()
         {
             List<Controllers.CoreServerCtrl> list;

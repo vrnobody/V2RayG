@@ -596,6 +596,7 @@ namespace V2RayG.Views.UserControls
             {
                 item.MouseEnter -= ShowCtrlBtn;
             }
+            this.coreServCtrl = null;
         }
         #endregion
 

@@ -15,7 +15,11 @@ namespace Apis.Interfaces.Services
         string ReplaceOrAddNewServer(string orgUid, string newConfig, string mark);
 
         void RequireFormMainReload();
+
         void ResetIndexQuiet();
+
+        void RestartOneServerByUid(string uid);
+
         bool RunSpeedTestOnSelectedServers();
 
         void ReverseSelectedByIndex();
