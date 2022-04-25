@@ -239,6 +239,8 @@ namespace Apis.Libs.Tasks
         protected override void Cleanup()
         {
             isCancelled = true;
+            this.singleTask = null;
+            this.chainedTask = null;
         }
         #endregion
 
