@@ -38,6 +38,7 @@ using System.Runtime.InteropServices;
 
 /*
  * v0.0.3.6 Dispose removed controls in FlyServer.
+ *          Remove icon cache in Notifier.
  * v0.0.3.5 Release handle after winform is closed.
  * v0.0.3.4 Set AuxSiWinForm to null after form closed.
  * v0.0.3.3 Add RestartOneServerByUid() in servers service.
