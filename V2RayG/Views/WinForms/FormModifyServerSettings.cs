@@ -30,6 +30,7 @@ namespace V2RayG.Views.WinForms
                 if (_instant == null || _instant.IsDisposed)
                 {
                     _instant = form;
+                    form.FormClosed += (s, a) => _instant = null;
                     form = null;
                 }
             }

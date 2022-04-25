@@ -16,6 +16,7 @@ namespace V2RayG.Views.WinForms
                 Apis.Misc.UI.Invoke(() =>
                 {
                     _instant = new FormDownloadCore();
+                    _instant.FormClosed += (s, a) => _instant = null;
                 });
             }
             Apis.Misc.UI.Invoke(() => _instant.Show());

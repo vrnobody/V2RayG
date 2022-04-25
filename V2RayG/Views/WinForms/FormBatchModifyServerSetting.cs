@@ -11,14 +11,20 @@ namespace V2RayG.Views.WinForms
         static FormBatchModifyServerSetting _instant;
         public static FormBatchModifyServerSetting GetForm()
         {
-            if (_instant == null || _instant.IsDisposed)
+            Apis.Misc.UI.Invoke(() =>
             {
-                Apis.Misc.UI.Invoke(() =>
+                if (_instant == null || _instant.IsDisposed)
                 {
                     _instant = new FormBatchModifyServerSetting();
-                });
-            }
-            Apis.Misc.UI.Invoke(() => _instant.Show());
+                    _instant.FormClosed += (s, a) => _instant = null;
+                    _instant.Show();
+                }
+                else
+                {
+                    _instant.Activate();
+                }
+            });
+
             return _instant;
         }
         #endregion

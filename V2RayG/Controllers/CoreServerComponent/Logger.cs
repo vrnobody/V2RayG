@@ -53,19 +53,14 @@ namespace V2RayG.Controllers.CoreServerComponent
                 if (logForm == null)
                 {
                     logForm = form;
+                    form.FormClosed += (s, a) => logForm = null;
+                    form = null;
                 }
             }
 
             Apis.Misc.UI.Invoke(() =>
             {
-                if (logForm == form && form != null)
-                {
-                    form.FormClosed += (s, a) => logForm = null;
-                }
-                else
-                {
-                    form?.Close();
-                }
+                form?.Close();
                 logForm?.Activate();
             });
         }
