@@ -529,9 +529,10 @@ namespace V2RayG.Services
 
                 try
                 {
-                    userSettings.PluginsSetting = string.Empty;
-                    userSettings.CompressedPluginsSetting = Apis.Libs.Infr.ZipExtensions
-                        .SerializeObjectToCompressedBase64(pluginsSetting);
+                    userSettings.PluginsSetting = string.Empty; // obsolete
+                    userSettings.CompressedPluginsSetting = string.Empty; // obsolete and buggy
+                    userSettings.CompressedUnicodePluginsSetting = Apis.Libs.Infr.ZipExtensions
+                        .SerializeObjectToCompressedUnicodeBase64(pluginsSetting);
                 }
                 catch { }
             }
@@ -575,18 +576,25 @@ namespace V2RayG.Services
 
             try
             {
+                var ucs = userSettings.CompressedUnicodeCoreInfoList;
                 var cs = userSettings.CompressedCoreInfoList;
-                if (string.IsNullOrEmpty(cs))
+                if (!string.IsNullOrEmpty(ucs))
+                {
+                    coreInfos = Apis.Libs.Infr.ZipExtensions
+                        .DeserializeObjectFromCompressedUnicodeBase64
+                            <List<Apis.Models.Datas.CoreInfo>>(ucs);
+                }
+                else if (!string.IsNullOrEmpty(cs))
+                {
+                    coreInfos = Apis.Libs.Infr.ZipExtensions
+                        .DeserializeObjectFromCompressedUtf8Base64
+                            <List<Apis.Models.Datas.CoreInfo>>(cs);
+                }
+                else
                 {
                     coreInfos = JsonConvert
                         .DeserializeObject<List<Apis.Models.Datas.CoreInfo>>(
                             userSettings.CoreInfoList);
-                }
-                else
-                {
-                    coreInfos = Apis.Libs.Infr.ZipExtensions
-                        .DeserializeObjectFromCompressedBase64<List<Apis.Models.Datas.CoreInfo>>(
-                            cs);
                 }
             }
             catch { }
@@ -743,10 +751,11 @@ namespace V2RayG.Services
         public void SaveServerList(List<Apis.Models.Datas.CoreInfo> coreInfoList)
         {
             var cil = coreInfoList ?? new List<Apis.Models.Datas.CoreInfo>();
-            string cs = Apis.Libs.Infr.ZipExtensions.SerializeObjectToCompressedBase64(cil);
+            string ucs = Apis.Libs.Infr.ZipExtensions.SerializeObjectToCompressedUnicodeBase64(cil);
 
             userSettings.CoreInfoList = string.Empty; // obsolete
-            userSettings.CompressedCoreInfoList = cs;
+            userSettings.CompressedCoreInfoList = string.Empty; // obsolete and buggy
+            userSettings.CompressedUnicodeCoreInfoList = ucs;
 
             SaveSettingsLater();
         }
@@ -806,17 +815,26 @@ namespace V2RayG.Services
 
             try
             {
-                if (string.IsNullOrEmpty(userSettings.CompressedPluginsSetting))
+                var ucps = userSettings.CompressedUnicodePluginsSetting;
+                var cps = userSettings.CompressedPluginsSetting; // obsolete and buggy
+                if (!string.IsNullOrEmpty(ucps))
+                {
+                    pluginsSetting = Apis.Libs.Infr.ZipExtensions
+                        .DeserializeObjectFromCompressedUnicodeBase64
+                            <Dictionary<string, string>>(ucps);
+
+                }
+                else if (!string.IsNullOrEmpty(cps))
+                {
+                    pluginsSetting = Apis.Libs.Infr.ZipExtensions
+                        .DeserializeObjectFromCompressedUtf8Base64
+                            <Dictionary<string, string>>(cps);
+                }
+                else
                 {
                     pluginsSetting = JsonConvert
                         .DeserializeObject<Dictionary<string, string>>(
                             userSettings.PluginsSetting);
-                }
-                else
-                {
-                    pluginsSetting = Apis.Libs.Infr.ZipExtensions
-                        .DeserializeObjectFromCompressedBase64<Dictionary<string, string>>(
-                            userSettings.CompressedPluginsSetting);
                 }
             }
             catch { }

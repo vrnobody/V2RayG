@@ -46,10 +46,13 @@ namespace V2RayG.Models.Datas
         public string PluginInfoItems { get; set; }
         public string PluginsSetting { get; set; }
         public string CompressedPluginsSetting { get; set; }
+        public string CompressedUnicodePluginsSetting { get; set; }
 
         public string Culture { get; set; }
         public string CoreInfoList { get; set; }
         public string CompressedCoreInfoList { get; set; }
+        public string CompressedUnicodeCoreInfoList { get; set; }
+
         public string ServerTracker { get; set; }
         public string WinFormPosList { get; set; }
 
@@ -99,10 +102,12 @@ namespace V2RayG.Models.Datas
             PluginInfoItems = string.Empty;
             PluginsSetting = string.Empty;
             CompressedPluginsSetting = string.Empty;
+            CompressedUnicodePluginsSetting = string.Empty;
 
             Culture = string.Empty;
             CoreInfoList = string.Empty;
             CompressedCoreInfoList = string.Empty;
+            CompressedUnicodeCoreInfoList = string.Empty;
 
             ServerTracker = string.Empty;
             WinFormPosList = string.Empty;
