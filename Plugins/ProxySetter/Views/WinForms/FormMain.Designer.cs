@@ -217,6 +217,7 @@
             this.chkBasicUseCustomPac.Name = "chkBasicUseCustomPac";
             this.toolTip1.SetToolTip(this.chkBasicUseCustomPac, resources.GetString("chkBasicUseCustomPac.ToolTip"));
             this.chkBasicUseCustomPac.UseVisualStyleBackColor = true;
+            this.chkBasicUseCustomPac.CheckedChanged += new System.EventHandler(this.chkBasicUseCustomPac_CheckedChanged);
             // 
             // cboxBasicPacMode
             // 

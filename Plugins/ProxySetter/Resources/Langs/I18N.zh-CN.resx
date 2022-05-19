@@ -145,7 +145,7 @@
     <value>直连</value>
   </data>
   <data name="MiGlobal" xml:space="preserve">
-    <value>全局</value>
+    <value>系统</value>
   </data>
   <data name="MiNone" xml:space="preserve">
     <value>手动</value>

@@ -129,14 +129,11 @@
   <data name="cboxBasicPacProtocol.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 20</value>
   </data>
-  <data name="tabBasic.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnBasicStopPacServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;tboxBasicCustomPacPath.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="cboxBasicPacMode.Items" xml:space="preserve">
     <value>White list</value>
@@ -150,29 +147,29 @@
   <data name="tabPac.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
+  <data name="tboxBasicCustomPacPath.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="label7.Text" xml:space="preserve">
     <value>You can modify the default PAC in tab setting as follows.</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tabBasic.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;tboxBasicCustomPacPath.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="rtboxPacBlackList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 266</value>
-  </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="lbBasicCurPacServerStatus.ToolTip" xml:space="preserve">
-    <value />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
   </data>
-  <data name="&gt;&gt;tboxUsageReadMe.Parent" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="tboxBasicGlobalPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 46</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -180,8 +177,8 @@
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="chkBasicUseShift.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 206</value>
@@ -195,14 +192,23 @@
   <data name="chkBasicUseAlt.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
   </data>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 12</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;cboxBasicSysProxyMode.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkBasicPacAlwaysOn.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="chkBasicPacAlwaysOn.ToolTip" xml:space="preserve">
     <value>Keep pac server running.</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUsageTxthinkingPac.Parent" xml:space="preserve">
+    <value>groupBox5</value>
   </data>
   <data name="btnBasicDebugPacServer.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 20</value>
@@ -213,11 +219,17 @@
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPac.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>653, 322</value>
+  <data name="tabBasic.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnBasicViewInNotepad.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="panel1.ToolTip" xml:space="preserve">
     <value />
@@ -228,20 +240,20 @@
   <data name="btnBasicBrowseCustomPac.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 150</value>
   </data>
-  <data name="chkBasicUseHotkey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 16</value>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tboxBasicHotkey.Name" xml:space="preserve">
     <value>tboxBasicHotkey</value>
   </data>
-  <data name="&gt;&gt;chkBasicUseAlt.Name" xml:space="preserve">
-    <value>chkBasicUseAlt</value>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBox1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBox2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>657, 326</value>
   </data>
   <data name="cboxBasicPacProtocol.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -255,8 +267,8 @@
   <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tboxUsageReadMe.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="chkBasicUseHotkey.ToolTip" xml:space="preserve">
+    <value>Enable / disable global hotkey.</value>
   </data>
   <data name="btnBasicStartPacServer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -270,8 +282,8 @@
   <data name="&gt;&gt;rtboxPacBlackList.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabBasic.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lbBasicCurPacServerStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 24</value>
   </data>
   <data name="chkBasicUseShift.Text" xml:space="preserve">
     <value>Shift</value>
@@ -294,11 +306,14 @@
   <data name="cboxBasicPacMode.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="chkBasicPacAlwaysOn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="groupBox4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -309,23 +324,26 @@
   <data name="cboxBasicSysProxyMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 20</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Setting</value>
-  </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tabUsage.Text" xml:space="preserve">
     <value>Usage</value>
   </data>
+  <data name="tboxUsageReadMe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 230</value>
+  </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>320, 314</value>
   </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;btnBaiscCopyProxyLink.Name" xml:space="preserve">
+    <value>btnBaiscCopyProxyLink</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="btnBasicViewInNotepad.ToolTip" xml:space="preserve">
+    <value>View PAC file in notepad.</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -342,11 +360,11 @@
   <data name="&gt;&gt;linkLabelUsageTxthinkingPac.Name" xml:space="preserve">
     <value>linkLabelUsageTxthinkingPac</value>
   </data>
-  <data name="btnSetSortWhitelist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>671, 398</value>
   </data>
-  <data name="&gt;&gt;tabPac.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="chkBasicUseHotkey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 16</value>
   </data>
   <data name="groupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -360,8 +378,8 @@
   <data name="&gt;&gt;tabUsage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cboxBasicPacProtocol.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;tabPac.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnBasicViewInNotepad.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -374,11 +392,17 @@
         AF2bz1tCf+8RAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="&gt;&gt;btnBasicStartPacServer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="chkBasicUseAlt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="&gt;&gt;btnBasicDebugPacServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkBasicUseHotkey.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="chkBasicUseHotkey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -391,9 +415,6 @@
   </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="tboxBasicHotkey.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
   </data>
   <data name="&gt;&gt;btnBasicViewInNotepad.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -409,9 +430,6 @@
   </data>
   <data name="chkBasicPacAlwaysOn.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 16</value>
-  </data>
-  <data name="&gt;&gt;btnBasicViewInNotepad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -452,8 +470,15 @@
   <data name="tabUsage.Size" type="System.Drawing.Size, System.Drawing">
     <value>657, 326</value>
   </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 314</value>
+  <data name="btnSetSortBlacklist.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAANRJREFUOE+dkDESgjAURHM2rmBDYUkrl8Ch9gB2cg4ruYnaqg1tZHfYzE8gMLoz
+        O5//8/dNghuGwW/ZrQkLRVFk/ROgaY7+/fqw/gXobz0BqCkA1ZphCA0Wy7JkuD7UrOhTgNud6UVAd+kY
+        lNFvAbwfiwCP+zO8HRW9AFhMAWEmQM44ly0gzGyT8/50ZbWAMNP71owQAgLom2cCrF3fhi0kAsht2zJc
+        VRV7/az0BjqjtJSGR0fnCM7CUCZMTysBAkdhCEO929oCIARnYUjkJU8rGTn3BZ1cWLtWGSqyAAAAAElF
+        TkSuQmCC
+</value>
   </data>
   <data name="&gt;&gt;lbBasicProxyLink.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -482,8 +507,8 @@
   <data name="rtboxPacWhiteList.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="cboxBasicPacMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 100</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btnBaiscCopyProxyLink.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -491,11 +516,14 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnBasicStartPacServer.ToolTip" xml:space="preserve">
     <value>Restart PAC server.</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 12</value>
   </data>
   <data name="groupBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -503,11 +531,17 @@
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;btnSetSortBlacklist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="chkBasicPacAlwaysOn.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="tabBasic.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>653, 322</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBox3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBox4" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -524,8 +558,11 @@
   <data name="tabUsage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="&gt;&gt;btnBasicDebugPacServer.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="chkBasicUseShift.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;tabUsage.Name" xml:space="preserve">
     <value>tabUsage</value>
@@ -533,20 +570,35 @@
   <data name="btnSetSortBlacklist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="linkLabelUsageTxthinkingPac.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>665, 352</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 49</value>
   </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="chkBasicAutoUpdateSysProxy.ToolTip" xml:space="preserve">
     <value>Auto update system proxy setting. For global and pac mode only.</value>
+  </data>
+  <data name="cboxBasicPacMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 100</value>
   </data>
   <data name="&gt;&gt;tboxBasicGlobalPort.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>This plug-in use the following project as the default PAC source.</value>
+  </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tabControl1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,100,Absolute,40" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 12</value>
@@ -563,6 +615,9 @@
   <data name="&gt;&gt;tboxUsageReadMe.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;lbBasicCurPacServerStatus.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
@@ -575,11 +630,14 @@
   <data name="chkBasicUseShift.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 16</value>
   </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 314</value>
+  </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;btnSetSortWhitelist.Name" xml:space="preserve">
-    <value>btnSetSortWhitelist</value>
+  <data name="&gt;&gt;cboxBasicSysProxyMode.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="tboxBaiscPacPort.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -590,23 +648,17 @@
   <data name="tboxBaiscPacPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 21</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
     <value>btnCancel</value>
   </data>
-  <data name="btnBasicStopPacServer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="tboxBasicHotkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lbBasicProxyLink.Text" xml:space="preserve">
-    <value>http://127.0.0.1:3001/pac/</value>
-  </data>
-  <data name="btnBasicStartPacServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="&gt;&gt;btnBasicDebugPacServer.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -617,6 +669,9 @@
   <data name="cboxBasicPacProtocol.Items" xml:space="preserve">
     <value>HTTP</value>
   </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
   <data name="chkBasicUseHotkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -626,8 +681,8 @@
   <data name="tboxBasicCustomPacPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="chkBasicUseHotkey.ToolTip" xml:space="preserve">
-    <value>Enable / disable global hotkey.</value>
+  <data name="linkLabelUsageTxthinkingPac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 12</value>
   </data>
   <data name="cboxBasicPacProtocol.ToolTip" xml:space="preserve">
     <value />
@@ -638,12 +693,6 @@
   <data name="panel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;tboxBasicHotkey.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lbBasicCurPacServerStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="label4.Text" xml:space="preserve">
     <value>PAC protocol</value>
   </data>
@@ -653,29 +702,26 @@
   <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnBasicBrowseCustomPac.ToolTip" xml:space="preserve">
-    <value>Browse custom PAC file.</value>
-  </data>
-  <data name="chkBasicUseAlt.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="btnBasicBrowseCustomPac.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
+  <data name="btnSetSortBlacklist.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="panel2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tboxUsageReadMe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 79</value>
   </data>
-  <data name="tableLayoutPanel3.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>PAC mode</value>
-  </data>
-  <data name="cboxBasicSysProxyMode.Items" xml:space="preserve">
-    <value>Manual</value>
+  <data name="&gt;&gt;tboxUsageReadMe.Parent" xml:space="preserve">
+    <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -690,11 +736,14 @@
         jpx4AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="tabPac.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>683, 426</value>
+  <data name="chkBasicUseCustomPac.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;lbBasicProxyLink.Name" xml:space="preserve">
     <value>lbBasicProxyLink</value>
@@ -705,20 +754,20 @@
   <data name="chkBasicAutoUpdateSysProxy.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="chkBasicUseShift.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="cboxBasicPacProtocol.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tboxBaiscPacPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 73</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
+  </data>
+  <data name="&gt;&gt;tabPac.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="btnBasicStartPacServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -732,17 +781,17 @@
   <data name="rtboxPacBlackList.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 42</value>
   </data>
-  <data name="lbBasicCurPacServerStatus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;tboxUsageReadMe.Name" xml:space="preserve">
+    <value>tboxUsageReadMe</value>
   </data>
   <data name="chkBasicUseCustomPac.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="tableLayoutPanel3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="rtboxPacBlackList.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="btnBasicStopPacServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 20</value>
   </data>
   <data name="&gt;&gt;chkBasicPacAlwaysOn.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -753,8 +802,11 @@
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 361</value>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btnBaiscCopyProxyLink.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="&gt;&gt;tboxBasicCustomPacPath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -768,17 +820,14 @@
   <data name="btnBasicBrowseCustomPac.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 23</value>
   </data>
-  <data name="tabUsage.ToolTip" xml:space="preserve">
-    <value />
+  <data name="btnBasicStartPacServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;btnBaiscCopyProxyLink.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -789,11 +838,14 @@
   <data name="label5.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lbBasicCurPacServerStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 24</value>
+  <data name="btnSetSortWhitelist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnBaiscCopyProxyLink.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;btnSetSortWhitelist.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;linkLabelUsageTxthinkingPac.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -804,35 +856,26 @@
   <data name="&gt;&gt;tboxBaiscPacPort.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="btnBasicStopPacServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Proxy mode</value>
   </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="btnBaiscCopyProxyLink.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAAJVJREFUOE+10EEKgCAQQFFv1V6X4tpreJxa1BE1W7idmmDAxrSEEj4RNQ9VAIBI
-        KUGleDSI1iJASlnknAPv/dZEcmAN8dIyL89IC8iREML9kWqAtRaMMaC1bh+pBuAwf5/GqUR6AHwW99IL
-        YIQcc7ELoOhecO41wPsHyLeplLodpAqAx3fE4wDvG+Ap/O8E+MIP70qwA3iV0qEij2QHAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
-  <data name="lbBasicProxyLink.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
   </data>
-  <data name="&gt;&gt;btnBaiscCopyProxyLink.Name" xml:space="preserve">
-    <value>btnBaiscCopyProxyLink</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="chkBasicAutoUpdateSysProxy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -846,17 +889,23 @@
   <data name="&gt;&gt;lbBasicProxyLink.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="&gt;&gt;tboxBasicCustomPacPath.Name" xml:space="preserve">
     <value>tboxBasicCustomPacPath</value>
   </data>
-  <data name="btnBaiscCopyProxyLink.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="tabPac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>657, 326</value>
   </data>
-  <data name="cboxBasicPacProtocol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 126</value>
+  <data name="&gt;&gt;chkBasicAutoUpdateSysProxy.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="cboxBasicPacMode.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;cboxBasicPacProtocol.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -867,8 +916,8 @@
   <data name="&gt;&gt;rtboxPacWhiteList.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tboxBasicCustomPacPath.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="btnBaiscCopyProxyLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="btnBaiscCopyProxyLink.Location" type="System.Drawing.Point, System.Drawing">
     <value>292, 46</value>
@@ -879,9 +928,6 @@
   <data name="btnBasicViewInNotepad.Location" type="System.Drawing.Point, System.Drawing">
     <value>270, 20</value>
   </data>
-  <data name="&gt;&gt;chkBasicUseShift.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="label2.ToolTip" xml:space="preserve">
     <value>Proxy server port.</value>
   </data>
@@ -890,19 +936,6 @@
   </data>
   <data name="&gt;&gt;rtboxPacBlackList.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSetSortBlacklist.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAANRJREFUOE+dkDESgjAURHM2rmBDYUkrl8Ch9gB2cg4ruYnaqg1tZHfYzE8gMLoz
-        O5//8/dNghuGwW/ZrQkLRVFk/ROgaY7+/fqw/gXobz0BqCkA1ZphCA0Wy7JkuD7UrOhTgNud6UVAd+kY
-        lNFvAbwfiwCP+zO8HRW9AFhMAWEmQM44ly0gzGyT8/50ZbWAMNP71owQAgLom2cCrF3fhi0kAsht2zJc
-        VRV7/az0BjqjtJSGR0fnCM7CUCZMTysBAkdhCEO929oCIARnYUjkJU8rGTn3BZ1cWLtWGSqyAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
-  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
@@ -913,20 +946,26 @@
   <data name="btnSetSortWhitelist.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>683, 426</value>
+  </data>
+  <data name="&gt;&gt;btnBasicViewInNotepad.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
   <data name="btnSetSortWhitelist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;tabBasic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="&gt;&gt;btnBasicBrowseCustomPac.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>671, 398</value>
   </data>
   <data name="&gt;&gt;btnSetSortWhitelist.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="btnSetSortWhitelist.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -943,14 +982,20 @@
   <data name="lbBasicProxyLink.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;tboxBasicGlobalPort.Name" xml:space="preserve">
+    <value>tboxBasicGlobalPort</value>
+  </data>
   <data name="chkBasicPacAlwaysOn.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 75</value>
+  </data>
+  <data name="&gt;&gt;btnSetSortBlacklist.Name" xml:space="preserve">
+    <value>btnSetSortBlacklist</value>
   </data>
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="lbBasicProxyLink.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -961,20 +1006,29 @@
   <data name="btnSetSortWhitelist.Location" type="System.Drawing.Point, System.Drawing">
     <value>294, 16</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 183</value>
+  <data name="tabUsage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboxBasicSysProxyMode.Name" xml:space="preserve">
+    <value>cboxBasicSysProxyMode</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Proxy port</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>PAC port</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
   <data name="cboxBasicSysProxyMode.Items2" xml:space="preserve">
-    <value>Global</value>
+    <value>System</value>
   </data>
-  <data name="&gt;&gt;tabPac.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="tabPac.Text" xml:space="preserve">
+    <value>Setting</value>
   </data>
   <data name="&gt;&gt;btnBasicBrowseCustomPac.Name" xml:space="preserve">
     <value>btnBasicBrowseCustomPac</value>
@@ -1003,26 +1057,23 @@
   <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;tboxUsageReadMe.Name" xml:space="preserve">
-    <value>tboxUsageReadMe</value>
+  <data name="&gt;&gt;chkBasicUseShift.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;tboxBaiscPacPort.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="tboxBasicHotkey.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tboxUsageReadMe.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="chkBasicUseShift.ToolTip" xml:space="preserve">
     <value />
@@ -1030,20 +1081,11 @@
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btnBasicStopPacServer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnBasicStopPacServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
-  </data>
   <data name="rtboxPacBlackList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="cboxBasicPacMode.Items1" xml:space="preserve">
-    <value>Black list</value>
-  </data>
-  <data name="&gt;&gt;tboxBasicGlobalPort.Name" xml:space="preserve">
-    <value>tboxBasicGlobalPort</value>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Hotkey</value>
   </data>
   <data name="cboxBasicSysProxyMode.Items3" xml:space="preserve">
     <value>Direct</value>
@@ -1060,23 +1102,29 @@
   <data name="chkBasicAutoUpdateSysProxy.Location" type="System.Drawing.Point, System.Drawing">
     <value>228, 22</value>
   </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabUsage.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;chkBasicAutoUpdateSysProxy.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="tboxBaiscPacPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 73</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Hotkey</value>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
   </data>
-  <data name="chkBasicAutoUpdateSysProxy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;chkBasicPacAlwaysOn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="tboxUsageReadMe.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1084,41 +1132,38 @@
   <data name="btnSetSortBlacklist.Location" type="System.Drawing.Point, System.Drawing">
     <value>294, 16</value>
   </data>
+  <data name="linkLabelUsageTxthinkingPac.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 37</value>
+  </data>
   <data name="cboxBasicPacMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 20</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;chkBasicUseAlt.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label7.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tboxUsageReadMe.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>395, 12</value>
+  <data name="tboxBasicHotkey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="tboxBasicGlobalPort.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="&gt;&gt;tabBasic.Name" xml:space="preserve">
     <value>tabBasic</value>
   </data>
-  <data name="&gt;&gt;btnBasicViewInNotepad.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;btnBasicDebugPacServer.Name" xml:space="preserve">
+    <value>btnBasicDebugPacServer</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>665, 34</value>
@@ -1132,17 +1177,17 @@
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="lbBasicProxyLink.Text" xml:space="preserve">
+    <value>http://127.0.0.1:3001/pac/</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="tboxBaiscPacPort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="chkBasicUseHotkey.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="chkBasicUseCustomPac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 16</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 23</value>
@@ -1153,23 +1198,14 @@
   <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="&gt;&gt;tboxBasicHotkey.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="tboxUsageReadMe.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="&gt;&gt;chkBasicUseHotkey.Parent" xml:space="preserve">
-    <value>groupBox1</value>
   </data>
   <data name="cboxBasicSysProxyMode.Items1" xml:space="preserve">
     <value>PAC</value>
   </data>
-  <data name="&gt;&gt;btnSetSortBlacklist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBasicStopPacServer.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="tabBasic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="&gt;&gt;chkBasicUseCustomPac.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1179,6 +1215,9 @@
   </data>
   <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="btnBasicViewInNotepad.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -1194,6 +1233,9 @@
   </data>
   <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 12</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1213,11 +1255,11 @@
   <data name="chkBasicAutoUpdateSysProxy.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;chkBasicPacAlwaysOn.Name" xml:space="preserve">
+    <value>chkBasicPacAlwaysOn</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>This plug-in use the following project as the default PAC source.</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1225,39 +1267,23 @@
   <data name="&gt;&gt;btnBasicStartPacServer.Name" xml:space="preserve">
     <value>btnBasicStartPacServer</value>
   </data>
-  <data name="chkBasicUseCustomPac.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
+  <data name="btnBaiscCopyProxyLink.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="btnSetSortWhitelist.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAANRJREFUOE+dkDESgjAURHM2rmBDYUkrl8Ch9gB2cg4ruYnaqg1tZHfYzE8gMLoz
-        O5//8/dNghuGwW/ZrQkLRVFk/ROgaY7+/fqw/gXobz0BqCkA1ZphCA0Wy7JkuD7UrOhTgNud6UVAd+kY
-        lNFvAbwfiwCP+zO8HRW9AFhMAWEmQM44ly0gzGyT8/50ZbWAMNP71owQAgLom2cCrF3fhi0kAsht2zJc
-        VRV7/az0BjqjtJSGR0fnCM7CUCZMTysBAkdhCEO929oCIARnYUjkJU8rGTn3BZ1cWLtWGSqyAAAAAElF
-        TkSuQmCC
-</value>
+  <data name="&gt;&gt;btnSetSortWhitelist.Name" xml:space="preserve">
+    <value>btnSetSortWhitelist</value>
   </data>
-  <data name="&gt;&gt;chkBasicPacAlwaysOn.Name" xml:space="preserve">
-    <value>chkBasicPacAlwaysOn</value>
-  </data>
-  <data name="&gt;&gt;cboxBasicPacProtocol.Name" xml:space="preserve">
-    <value>cboxBasicPacProtocol</value>
-  </data>
-  <data name="&gt;&gt;btnSetSortWhitelist.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="chkBasicPacAlwaysOn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lbBasicProxyLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;cboxBasicPacMode.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;cboxBasicSysProxyMode.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Setting</value>
   </data>
   <data name="lbBasicCurPacServerStatus.Text" xml:space="preserve">
     <value>PAC server is stopped.</value>
@@ -1277,17 +1303,23 @@
   <data name="&gt;&gt;chkBasicUseShift.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnBaiscCopyProxyLink.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAJVJREFUOE+10EEKgCAQQFFv1V6X4tpreJxa1BE1W7idmmDAxrSEEj4RNQ9VAIBI
+        KUGleDSI1iJASlnknAPv/dZEcmAN8dIyL89IC8iREML9kWqAtRaMMaC1bh+pBuAwf5/GqUR6AHwW99IL
+        YIQcc7ELoOhecO41wPsHyLeplLodpAqAx3fE4wDvG+Ap/O8E+MIP70qwA3iV0qEij2QHAAAAAElFTkSu
+        QmCC
+</value>
   </data>
-  <data name="chkBasicUseCustomPac.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="lbBasicCurPacServerStatus.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnBasicViewInNotepad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1298,14 +1330,11 @@
   <data name="cboxBasicSysProxyMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 20</value>
   </data>
-  <data name="btnBasicViewInNotepad.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabUsage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>347, 12</value>
+  <data name="btnSetSortBlacklist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="groupBox5.ToolTip" xml:space="preserve">
     <value />
@@ -1313,8 +1342,8 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="tboxBasicGlobalPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 46</value>
+  <data name="&gt;&gt;btnBasicBrowseCustomPac.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Status</value>
@@ -1322,11 +1351,8 @@
   <data name="btnSetSortBlacklist.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
-  <data name="&gt;&gt;tabBasic.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="linkLabelUsageTxthinkingPac.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="rtboxPacWhiteList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 12</value>
@@ -1334,11 +1360,11 @@
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>651, 320</value>
   </data>
-  <data name="cboxBasicPacMode.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="btnBasicStopPacServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 20</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1349,8 +1375,8 @@
   <data name="&gt;&gt;chkBasicAutoUpdateSysProxy.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnBasicDebugPacServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lbBasicProxyLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnBasicDebugPacServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -1358,8 +1384,8 @@
   <data name="btnCancel.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="&gt;&gt;chkBasicUseHotkey.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;linkLabelUsageTxthinkingPac.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1367,26 +1393,23 @@
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>319, 314</value>
   </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="tboxBasicCustomPacPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 21</value>
   </data>
   <data name="tboxUsageReadMe.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="btnBasicViewInNotepad.ToolTip" xml:space="preserve">
-    <value>View PAC file in notepad.</value>
-  </data>
-  <data name="btnSetSortBlacklist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;btnBasicStartPacServer.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPac.ToolTip" xml:space="preserve">
+  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="btnBasicBrowseCustomPac.ToolTip" xml:space="preserve">
+    <value>Browse custom PAC file.</value>
+  </data>
+  <data name="btnBasicDebugPacServer.ToolTip" xml:space="preserve">
+    <value>Debug in browser.</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>PAC mode</value>
   </data>
   <data name="lbBasicProxyLink.ToolTip" xml:space="preserve">
     <value>Current system proxy.</value>
@@ -1394,20 +1417,14 @@
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
-  <data name="linkLabelUsageTxthinkingPac.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 37</value>
-  </data>
-  <data name="btnBasicViewInNotepad.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 320</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormMain</value>
   </data>
-  <data name="&gt;&gt;btnBasicBrowseCustomPac.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="tabPac.Text" xml:space="preserve">
-    <value>Setting</value>
+  <data name="cboxBasicSysProxyMode.Items" xml:space="preserve">
+    <value>Manual</value>
   </data>
   <data name="btnBasicStopPacServer.ToolTip" xml:space="preserve">
     <value>Stop PAC server.</value>
@@ -1424,8 +1441,15 @@
   <data name="groupBox2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;btnSetSortBlacklist.Name" xml:space="preserve">
-    <value>btnSetSortBlacklist</value>
+  <data name="btnSetSortWhitelist.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAANRJREFUOE+dkDESgjAURHM2rmBDYUkrl8Ch9gB2cg4ruYnaqg1tZHfYzE8gMLoz
+        O5//8/dNghuGwW/ZrQkLRVFk/ROgaY7+/fqw/gXobz0BqCkA1ZphCA0Wy7JkuD7UrOhTgNud6UVAd+kY
+        lNFvAbwfiwCP+zO8HRW9AFhMAWEmQM44ly0gzGyT8/50ZbWAMNP71owQAgLom2cCrF3fhi0kAsht2zJc
+        VRV7/az0BjqjtJSGR0fnCM7CUCZMTysBAkdhCEO929oCIARnYUjkJU8rGTn3BZ1cWLtWGSqyAAAAAElF
+        TkSuQmCC
+</value>
   </data>
   <data name="&gt;&gt;tboxBaiscPacPort.ZOrder" xml:space="preserve">
     <value>19</value>
@@ -1433,8 +1457,8 @@
   <data name="tboxBasicHotkey.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 21</value>
   </data>
-  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;tboxBasicHotkey.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
@@ -1442,17 +1466,14 @@
   <data name="rtboxPacBlackList.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="chkBasicUseAlt.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="cboxBasicSysProxyMode.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tboxBaiscPacPort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="btnBasicStopPacServer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="btnBasicStartPacServer.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1463,14 +1484,14 @@
   <data name="&gt;&gt;chkBasicPacAlwaysOn.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;cboxBasicSysProxyMode.Name" xml:space="preserve">
-    <value>cboxBasicSysProxyMode</value>
+  <data name="tboxBasicHotkey.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>PAC port</value>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 183</value>
   </data>
   <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>tabUsage</value>
@@ -1484,20 +1505,23 @@
         vff+8NEgFYMxjLkETRAvvYV38TAMxzCcCwxCAOHP4hjR5DsxYy+1KlKi/qW/8wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;tabBasic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cboxBasicPacProtocol.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="chkBasicUseHotkey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 181</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="chkBasicUseAlt.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 3</value>
@@ -1523,20 +1547,20 @@
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
+  <data name="lbBasicCurPacServerStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="groupBox5.Text" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="&gt;&gt;lbBasicProxyLink.Type" xml:space="preserve">
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPac.Size" type="System.Drawing.Size, System.Drawing">
-    <value>657, 326</value>
+  <data name="&gt;&gt;chkBasicUseAlt.Name" xml:space="preserve">
+    <value>chkBasicUseAlt</value>
   </data>
   <data name="&gt;&gt;btnBasicStartPacServer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1547,8 +1571,8 @@
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tabBasic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="tabUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;cboxBasicPacMode.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1556,8 +1580,8 @@
   <data name="chkBasicUseCustomPac.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tabUsage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="tboxBasicGlobalPort.ToolTip" xml:space="preserve">
     <value />
@@ -1577,35 +1601,26 @@
   <data name="linkLabelUsageTxthinkingPac.Text" xml:space="preserve">
     <value>https://github.com/txthinking/blackwhite</value>
   </data>
-  <data name="groupBox4.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tboxUsageReadMe.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbBasicCurPacServerStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;tabUsage.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;linkLabelUsageTxthinkingPac.Parent" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="&gt;&gt;btnBasicStopPacServer.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="btnBaiscCopyProxyLink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tboxBasicGlobalPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 21</value>
   </data>
-  <data name="tboxBasicGlobalPort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="chkBasicUseAlt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 206</value>
-  </data>
-  <data name="tboxUsageReadMe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>628, 230</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>651, 320</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -1613,11 +1628,8 @@
   <data name="chkBasicUseAlt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Ctrl +</value>
-  </data>
-  <data name="rtboxPacWhiteList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="cboxBasicPacMode.Items1" xml:space="preserve">
+    <value>Black list</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1625,17 +1637,23 @@
   <data name="btnBasicDebugPacServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>671, 398</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="btnBasicStopPacServer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Ctrl +</value>
   </data>
   <data name="&gt;&gt;lbBasicCurPacServerStatus.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnSetSortWhitelist.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnBasicBrowseCustomPac.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="tabPac.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -1643,23 +1661,14 @@
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 3</value>
   </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>V2RayG plugin</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>14</value>
   </data>
   <data name="&gt;&gt;btnSetSortBlacklist.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnBasicDebugPacServer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -1670,8 +1679,8 @@
   <data name="chkBasicUseCustomPac.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 154</value>
   </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnBasicStopPacServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1679,8 +1688,8 @@
   <data name="&gt;&gt;btnBasicStopPacServer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="chkBasicUseAlt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 206</value>
   </data>
   <data name="tabBasic.Text" xml:space="preserve">
     <value>Basic</value>
@@ -1694,9 +1703,6 @@
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
@@ -1709,17 +1715,17 @@
   <data name="btnBaiscCopyProxyLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnBasicViewInNotepad.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>254, 6</value>
   </data>
-  <data name="&gt;&gt;tboxBasicCustomPacPath.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 361</value>
   </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>671, 398</value>
+  <data name="chkBasicUseHotkey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 181</value>
   </data>
   <data name="chkBasicUseShift.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1742,17 +1748,20 @@
   <data name="&gt;&gt;chkBasicAutoUpdateSysProxy.Name" xml:space="preserve">
     <value>chkBasicAutoUpdateSysProxy</value>
   </data>
-  <data name="&gt;&gt;cboxBasicSysProxyMode.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;cboxBasicPacMode.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;btnSetSortWhitelist.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="tboxBasicHotkey.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="tboxUsageReadMe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 79</value>
+  <data name="cboxBasicPacProtocol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 126</value>
   </data>
   <data name="&gt;&gt;btnBasicViewInNotepad.Name" xml:space="preserve">
     <value>btnBasicViewInNotepad</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1760,23 +1769,23 @@
   <data name="chkBasicUseAlt.Text" xml:space="preserve">
     <value>Alt</value>
   </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;tboxBaiscPacPort.Name" xml:space="preserve">
     <value>tboxBaiscPacPort</value>
   </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
+  <data name="&gt;&gt;tboxBasicHotkey.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="btnSetSortBlacklist.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="tboxBasicGlobalPort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="tabBasic.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;tboxBasicHotkey.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="rtboxPacBlackList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 266</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 58</value>
@@ -1787,23 +1796,17 @@
   <data name="&gt;&gt;rtboxPacBlackList.Name" xml:space="preserve">
     <value>rtboxPacBlackList</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabUsage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="btnBasicDebugPacServer.ToolTip" xml:space="preserve">
-    <value>Debug in browser.</value>
-  </data>
   <data name="chkBasicPacAlwaysOn.Text" xml:space="preserve">
     <value>Always</value>
   </data>
-  <data name="linkLabelUsageTxthinkingPac.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 12</value>
+  <data name="&gt;&gt;cboxBasicPacProtocol.Name" xml:space="preserve">
+    <value>cboxBasicPacProtocol</value>
   </data>
   <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1811,8 +1814,8 @@
   <data name="lbBasicCurPacServerStatus.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 12</value>
   </data>
-  <data name="chkBasicUseAlt.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tboxBasicHotkey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -1823,8 +1826,8 @@
   <data name="tabControl1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1835,14 +1838,11 @@
   <data name="&gt;&gt;chkBasicUseAlt.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;btnBasicDebugPacServer.Name" xml:space="preserve">
-    <value>btnBasicDebugPacServer</value>
-  </data>
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>657, 326</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -142,7 +142,7 @@ namespace ProxySetter.Resources.Langs {
         }
         
         /// <summary>
-        ///   查找类似 Global 的本地化字符串。
+        ///   查找类似 System 的本地化字符串。
         /// </summary>
         internal static string MiGlobal {
             get {

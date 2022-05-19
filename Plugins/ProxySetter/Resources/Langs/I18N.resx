@@ -145,7 +145,7 @@
     <value>Direct</value>
   </data>
   <data name="MiGlobal" xml:space="preserve">
-    <value>Global</value>
+    <value>System</value>
   </data>
   <data name="MiNone" xml:space="preserve">
     <value>Manual</value>
