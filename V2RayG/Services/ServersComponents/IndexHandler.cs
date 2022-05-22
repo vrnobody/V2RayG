@@ -101,8 +101,8 @@ namespace V2RayG.Services.ServersComponents
             try
             {
                 sortedServers = coreServList
-                .OrderBy(c => c.GetCoreStates().GetIndex())
-                .ToList();
+                    .OrderBy(c => c.GetCoreStates().GetIndex())
+                    .ToList();
             }
             finally
             {
