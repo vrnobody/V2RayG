@@ -41,6 +41,7 @@ namespace V2RayG.Services
             new List<Controllers.CoreServerCtrl>();
 
         ConcurrentDictionary<string, bool> markList = new ConcurrentDictionary<string, bool>();
+        ConcurrentDictionary<string, bool> configCache = new ConcurrentDictionary<string, bool>();
 
         Apis.Libs.Tasks.LazyGuy lazyServerSettingsRecorder;
         ReaderWriterLockSlim locker = new ReaderWriterLockSlim();
@@ -322,27 +323,19 @@ namespace V2RayG.Services
 
         public void UpdateMarkList()
         {
-            List<string> marks = null;
             locker.EnterReadLock();
             try
             {
-                marks = coreServList.Select(s => s.GetCoreStates().GetMark()).ToList();
+                markList.Clear();
+                foreach (var core in coreServList)
+                {
+                    var mark = core.GetCoreStates().GetMark();
+                    AddNewMark(mark);
+                }
             }
             finally
             {
                 locker.ExitReadLock();
-            }
-
-            markList.Clear();
-            if (marks == null)
-            {
-                return;
-            }
-
-            var filtered = marks.Distinct().ToList();
-            foreach (var mark in filtered)
-            {
-                AddNewMark(mark);
             }
         }
 
@@ -588,6 +581,8 @@ namespace V2RayG.Services
                 coreServs = coreServList.Where(cs => cs.GetCoreStates().IsSelected()).ToList();
                 foreach (var cs in coreServs)
                 {
+                    var cfg = cs.GetConfiger().GetConfig();
+                    configCache.TryRemove(cfg, out _);
                     coreServList.Remove(cs);
                 }
             }
@@ -640,6 +635,7 @@ namespace V2RayG.Services
             try
             {
                 servs = coreServList.ToList();
+                configCache.Clear();
                 coreServList.Clear();
             }
             finally
@@ -693,6 +689,7 @@ namespace V2RayG.Services
                 coreServ = coreServList.FirstOrDefault(cs => cs.GetConfiger().GetConfig() == config);
                 if (coreServ != null)
                 {
+                    configCache.TryRemove(config, out _);
                     coreServList.Remove(coreServ);
                 }
             }
@@ -761,6 +758,7 @@ namespace V2RayG.Services
                 // double check
                 if (!IsServerExistWorker(config))
                 {
+                    configCache.TryAdd(config, true);
                     coreServList.Add(newServer);
                     var idx = coreServList.Count();
                     newServer.GetCoreStates().SetIndexQuiet(idx);
@@ -812,6 +810,8 @@ namespace V2RayG.Services
                 return false;
             }
 
+            configCache.TryRemove(orgConfig, out _);
+            configCache.TryAdd(newConfig, true);
             coreCtrl.GetConfiger().SetConfig(newConfig);
             coreCtrl.GetCoreStates().SetLastModifiedUtcTicks(DateTime.UtcNow.Ticks);
             return true;
@@ -866,9 +866,7 @@ namespace V2RayG.Services
         #region private methods
         bool IsServerExistWorker(string config)
         {
-            var hash = Apis.Misc.Utils.Md5Base64(config);
-            return coreServList
-                .Any(s => s.GetConfiger().GetHash() == hash);
+            return configCache.ContainsKey(config);
         }
 
         void SaveServersSettingsWorker()
@@ -1005,6 +1003,8 @@ namespace V2RayG.Services
             foreach (var server in coreServList)
             {
                 server.Run(cache, setting, configMgr, this);
+                var cfg = server.GetConfiger().GetConfig();
+                configCache.TryAdd(cfg, true);
                 BindEventsTo(server);
             }
         }
