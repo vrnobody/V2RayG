@@ -106,11 +106,12 @@ namespace V2RayG.Services
             return CountImportSuccessResult(results);
         }
 
-        public void ImportLinkWithOutV2cfgLinksBatchMode(
+        public void ImportLinkWithOutV2cfgLinksBatchModeSync(
             IEnumerable<string[]> linkList)
         {
             var decoders = GenDecoderList(false);
-            ImportLinksBatchModeThen(linkList, decoders, true);
+            var results = ImportLinksBatchModeSync(linkList, decoders);
+            ShowImportResults(results);
         }
 
         public void ImportLinkWithOutV2cfgLinks(string text)
@@ -118,7 +119,7 @@ namespace V2RayG.Services
             var pair = new string[] { text, "" };
             var linkList = new List<string[]> { pair };
             var decoders = GenDecoderList(false);
-            ImportLinksBatchModeThen(linkList, decoders, true);
+            ImportLinksBatchModeAsync(linkList, decoders, true);
         }
 
         public void ImportLinkWithV2cfgLinks(string text)
@@ -127,7 +128,7 @@ namespace V2RayG.Services
             var linkList = new List<string[]> { pair };
             var decoders = GenDecoderList(true);
 
-            ImportLinksBatchModeThen(linkList, decoders, true);
+            ImportLinksBatchModeAsync(linkList, decoders, true);
         }
 
         public void Run(
@@ -177,7 +178,7 @@ namespace V2RayG.Services
         }
 
 
-        void ImportLinksBatchModeThen(
+        void ImportLinksBatchModeAsync(
             IEnumerable<string[]> linkList,
             IEnumerable<Apis.Interfaces.IShareLinkDecoder> decoders,
             bool isShowImportResults)
