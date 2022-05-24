@@ -5,7 +5,7 @@
         // private variables will not be serialized
 
         // plain text of config.json
-        public string config, hash;
+        public string config;
 
         // flags
         public bool
@@ -54,7 +54,6 @@
             title = string.Empty;
             summary = string.Empty;
             config = string.Empty;
-            hash = string.Empty;
             uid = string.Empty;
 
 
@@ -65,11 +64,6 @@
             tag1 = string.Empty;
             tag2 = string.Empty;
             tag3 = string.Empty;
-        }
-
-        public void UpdateHash()
-        {
-            this.hash = Apis.Misc.Utils.Md5Base64(config);
         }
 
         public void ClearCachedString()

@@ -746,7 +746,6 @@ namespace V2RayG.Services
                 config = config,
                 customMark = mark,
             };
-            coreInfo.UpdateHash();
 
             var newServer = new Controllers.CoreServerCtrl(coreInfo);
             newServer.Run(cache, setting, configMgr, this);
