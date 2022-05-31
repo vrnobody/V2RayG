@@ -18,7 +18,7 @@ weight: 1
 {{< figure src="../images/systray/icons_grb.png" >}}
  * 绿色表示当前系统代理为直连模式
  * 紫色表示当前系统代理为PAC模式
- * 蓝色表示当前系统代理为全局模式
+ * 蓝色表示当前系统代理为系统模式
 
 注：启用ProxySetter插件后才可以切换代理模式
 
