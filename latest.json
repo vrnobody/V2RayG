@@ -1,10 +1,12 @@
 {
-  "version": "0.0.3.0",
-  "md5": "8D18C0D21A3D6098559EF623F53ED288",
+  "version": "0.0.4.0",
+  "md5": "7A5F861383229F3D63F56F2FF85750D7",
   "warnings": [],
   "changes": [
-    "存档间隔调整为5分钟",
-    "移除Luna插件所有Json相关的函数",
-    "优化Luna脚本内存占用"
+    "提高导入、删除服务器速度",
+    "调整ProxySetter界面",
+    "删除coreConfiger:GetHash()",
+    "Luna插件添加httpServ模块",
+    "优化一点点内存占用"
   ]
 }
