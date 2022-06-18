@@ -5,6 +5,13 @@ draft: false
 weight: 10
 ---
 
+##### `v0.0.4.0`
+提高导入、删除服务器速度  
+调整ProxySetter界面  
+删除coreConfiger:GetHash()  
+Luna插件添加httpServ模块  
+优化一点点内存占用  
+
 ##### `v0.0.3.0`
 存档间隔调整为5分钟  
 移除Luna插件所有Json相关的函数  
