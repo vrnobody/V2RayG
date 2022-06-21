@@ -141,6 +141,6 @@
   </data>
   <data name="Version" xml:space="preserve">
     <value>0.5.1</value>
-    <comment>+using(lua core)</comment>
+    <comment>Add task.lua</comment>
   </data>
 </root>
