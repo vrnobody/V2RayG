@@ -208,6 +208,7 @@
     <Compile Include="Services\Caches\JsonKeywordItems.cs" />
     <Compile Include="Services\ConfigMgr.cs" />
     <Compile Include="Services\Launcher.cs" />
+    <Compile Include="Services\PipeSrv.cs" />
     <Compile Include="Services\PluginsServer.cs" />
     <Compile Include="Services\ServersComponents\IndexHandler.cs" />
     <Compile Include="Services\ServersComponents\QueryHandler.cs" />
