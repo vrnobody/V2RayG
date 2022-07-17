@@ -247,11 +247,9 @@ namespace V2RayG.Services
             var configMgr = ConfigMgr.Instance;
             var slinkMgr = ShareLinkMgr.Instance;
             var pluginsServ = PluginsServer.Instance;
-            var pipeSrv = PipeSrv.Instance;
 
             // by dispose order
             services = new List<IDisposable> {
-                pipeSrv,
                 updater,
                 pluginsServ,
                 notifier,
@@ -269,7 +267,6 @@ namespace V2RayG.Services
             slinkMgr.Run(setting, servers, cache);
             notifier.Run(setting, servers, slinkMgr, updater);
             pluginsServ.Run(setting, servers, configMgr, slinkMgr, notifier);
-            pipeSrv.Run(notifier);
         }
 
         readonly object disposeLocker = new object();

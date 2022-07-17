@@ -47,8 +47,7 @@ namespace V2RayG
             }
             else
             {
-                Services.PipeSrv.ShowFormMain();
-                // MessageBox.Show(I18N.ExitOtherVGCFirst);
+                MessageBox.Show(I18N.ExitOtherVGCFirst);
             }
         }
 
