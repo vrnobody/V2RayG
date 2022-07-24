@@ -6,9 +6,7 @@ namespace V2RayG.Views.WinForms
 {
     public partial class FormSingleServerLog : Form
     {
-        public static FormSingleServerLog CreateLogForm(
-            string title,
-            Controllers.CoreServerComponent.Logger logger)
+        public static FormSingleServerLog CreateLogForm(string title, Apis.Libs.Sys.QueueLogger logger)
         {
             FormSingleServerLog logForm = null;
             Apis.Misc.UI.Invoke(() =>
@@ -21,19 +19,15 @@ namespace V2RayG.Views.WinForms
 
         long updateTimestamp = -1;
         Apis.Libs.Tasks.Routine logUpdater;
-        Apis.Libs.Sys.QueueLogger qLogger = new Apis.Libs.Sys.QueueLogger();
-        Controllers.CoreServerComponent.Logger coreLogger;
+        Apis.Libs.Sys.QueueLogger qLogger;
 
         bool isPaused = false;
 
         FormSingleServerLog(
             string title,
-            Controllers.CoreServerComponent.Logger logger)
+            Apis.Libs.Sys.QueueLogger logger)
         {
-            coreLogger = logger;
-
-            coreLogger.OnLog += OnLogHandler;
-
+            this.qLogger = logger;
             logUpdater = new Apis.Libs.Tasks.Routine(
                 RefreshUi,
                 Apis.Models.Consts.Intervals.SiFormLogRefreshInterval);
@@ -41,11 +35,6 @@ namespace V2RayG.Views.WinForms
             InitializeComponent();
             Apis.Misc.UI.AutoSetFormIcon(this);
             this.Text = I18N.Log + " - " + title;
-        }
-
-        void OnLogHandler(object sender, string msg)
-        {
-            qLogger.Log(msg);
         }
 
         private void RefreshUi()
@@ -69,8 +58,9 @@ namespace V2RayG.Views.WinForms
         private void FormSingleServerLog_FormClosed(object sender, FormClosedEventArgs e)
         {
             logUpdater.Dispose();
-            coreLogger.OnLog -= OnLogHandler;
-            qLogger?.Dispose();
+
+            // Potential memory leaks
+            // qLogger.Dispose();
         }
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
