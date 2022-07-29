@@ -540,9 +540,8 @@ namespace Luna.Models.Apis
         #region ILuaSys.System
         public void SetTimeout(GlobalApis.Interfaces.Lua.ILuaMailBox mailbox, int timeout, double id)
         {
-            GlobalApis.Misc.Utils.RunInBackground(async () =>
+            Task.Delay(timeout).ContinueWith((task) =>
             {
-                await Task.Delay(timeout);
                 var addr = mailbox?.GetAddress();
                 if (!string.IsNullOrEmpty(addr))
                 {
